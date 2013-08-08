@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<discussao>
+	<titulo>Lei organica</titulo>
+	<data></data>
+	<mensagem>
+		<numero>1</numero>
+		<texto>Bem vindo.</texto>
+		<usuario>equipe e-democracia</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>2</numero>
+		<texto>OBRIGADO</texto>
+		<usuario>felipe</usuario>
+		<referenciaTreinamento>1</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>3</numero>
+		<texto>Acompanha-nos de onde?</texto>
+		<usuario>equipe e-democracia</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>4</numero>
+		<texto>SÃO FELIPE ESTADO DA BAHIA. VIA INTERNET SOU O UNICO DA MINHA CIDADE, ACREDITE</texto>
+		<usuario>felipe</usuario>
+		<referenciaTreinamento>3</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>5</numero>
+		<texto>Mais uma vez agradecemos a sua presença. Pedimos que divulgue este canal de comunicação com a CTASP, aos conhecidos, concidadãos e amigos em geral</texto>
+		<usuario>equipe e-democracia</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>6</numero>
+		<texto>ESTA MUDANÇA SERA FAVORAVEL</texto>
+		<usuario>felipe</usuario>
+	</mensagem>
+</discussao>

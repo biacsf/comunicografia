@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="discussao" type="Discussao" />
+	<xsd:complexType name="Discussao">
+		<xsd:sequence>
+			<xsd:element name="titulo" type="xsd:string" minOccurs="0"
+				maxOccurs="1" />
+			<xsd:element name="data" type="xsd:string" minOccurs="0"
+				maxOccurs="1" />
+			<xsd:element name="mensagem" type="Mensagem" minOccurs="0"
+				maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Mensagem">
+		<xsd:sequence>
+			<xsd:element name="numero" minOccurs="0" maxOccurs="1"
+				type="xsd:string" nillable="false" />
+			<xsd:element name="texto" minOccurs="1" maxOccurs="1"
+				type="xsd:string" nillable="false" />
+			<xsd:element name="usuario" minOccurs="1" maxOccurs="1"
+				type="xsd:string" nillable="false" />
+			<xsd:element name="referencia" minOccurs="0" maxOccurs="1"
+				type="Mensagem" />
+			<xsd:element name="referenciaTreinamento" minOccurs="0"
+				maxOccurs="1" type="xsd:string" />
+			<xsd:element name="tipo" minOccurs="0" maxOccurs="1"
+				type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>

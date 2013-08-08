@@ -1,0 +1,13 @@
+Caracteristicas estruturais
+- Número de mensagens entre A e B
+
+Características léxicas:
+- Número de palavras em A
+- Número de substantivos em A x
+- Número de palavras em A que também existem em B
+- Número de substantivos que existem em A e também existem em B x
+- Número de n-grams presentes em A e B x
+- Primeira e última palavra de A
+- A contém o nome do usuário que enviou a mensagem B?
+- B contém o nome do usuário que enviou a mensagem A?
+
