@@ -19,8 +19,13 @@ import ptstemmer.exceptions.PTStemmerException;
 import ptstemmer.support.PTStemmerUtilities;
 
 public class TratamentoTextual {
+	
+	public static String converteParaMinuscula(String mensagem)
+	{
+		return mensagem.toLowerCase();
+	}
 
-	public static String aplicaStemmingPalavra(String palavra)
+	private static String aplicaStemmingPalavra(String palavra)
 	{
 	
 		Stemmer st = null;
@@ -37,7 +42,7 @@ public class TratamentoTextual {
 	
 	}
 	
-	public static String aplicaStemmingFrase(String frase)
+	private static String aplicaStemmingFrase(String frase)
 	{
 	
 		Stemmer st = null;
@@ -58,7 +63,7 @@ public class TratamentoTextual {
 	
 	}
 	
-	public static String removeStopWords(String mensagem) throws IOException
+	private static String removeStopWords(String mensagem) throws IOException
 	{
 		Analyzer analyzer = new BrazilianAnalyzer(Version.LUCENE_42);
 		TokenStream tokenStream = analyzer.tokenStream(null, new StringReader(mensagem));
@@ -85,6 +90,9 @@ public class TratamentoTextual {
 			String texto;
 			texto = TratamentoTextual.removeStopWords(mensagem.getTexto());
 			
+			texto = TratamentoTextual.converteParaMinuscula(mensagem.getTexto());
+			
+			
 			//O corretor nao esta tendo bons resultados
 			//new CorretorGramatical(texto);
 			
@@ -95,5 +103,69 @@ public class TratamentoTextual {
 		}
 		return mensagens;
 	}
+	public static Mensagem executaTratamentosMensagem(Mensagem mensagem) throws FileNotFoundException, IOException
+	{
+		
+			String texto;
+			texto = TratamentoTextual.removeStopWords(mensagem.getTexto());
+			
+			texto = TratamentoTextual.converteParaMinuscula(mensagem.getTexto());
+			
+			
+			//O corretor nao esta tendo bons resultados
+			//new CorretorGramatical(texto);
+			
+			//texto = TratamentoTextual.aplicaStemmingFrase(mensagem.getTexto());
+			
+			mensagem.setTexto(texto);
+			
+		
+		return mensagem;
+	}public static Mensagem executaTratamentosMensagemParaSalvar(Mensagem mensagem) throws FileNotFoundException, IOException
+	{
+		
+		String texto;
+
+		texto = TratamentoTextual.converteParaMinuscula(mensagem.getTexto());
+
+		mensagem.setTexto(texto);
+		
+	
+	return mensagem;
+}
+	public static String executaTratamentosTextoParaSalvar(String mensagem) throws FileNotFoundException, IOException
+	{
+		
+			String texto;
+			
+			texto = TratamentoTextual.converteParaMinuscula(mensagem);
+		
+		return texto;
+	}
+	public static String executaTratamentosTextoParaRecomendacao(String mensagem) throws FileNotFoundException, IOException
+	{
+		
+			String texto;
+			texto = TratamentoTextual.removeStopWords(mensagem);
+			
+			texto = TratamentoTextual.converteParaMinuscula(mensagem);
+			
+			
+			//O corretor nao esta tendo bons resultados
+			//new CorretorGramatical(texto);
+			
+			//texto = TratamentoTextual.aplicaStemmingFrase(mensagem.getTexto());
+						
+		
+		return texto;
+	}
+	
+    public static boolean isIntegerParseInt(String str) {
+        try {
+            Float.parseFloat(str);
+            return true;
+        } catch (NumberFormatException nfe) {}
+        return false;
+    }
 
 }

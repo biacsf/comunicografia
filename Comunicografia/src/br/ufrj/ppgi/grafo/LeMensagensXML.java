@@ -18,7 +18,7 @@ public class LeMensagensXML {
 	 */
 	public List<Discussao> leituraXML() {
 
-		String diretorio = "src/recursos/logs";
+		String diretorio = "src/recursos/recomendacao";
 		List<Discussao> discussoes = new ArrayList<Discussao>();
 
 		try {
@@ -45,6 +45,8 @@ public class LeMensagensXML {
 					// Recupera as mensagens enviadas nesse log
 					List<Mensagem> mensagens = element.getValue().getMensagem();
 					discussao.setMensagens(mensagens);
+					discussao.setTitulo(element.getValue().getTitulo());
+					discussao.setData(element.getValue().getData());
 					discussoes.add(discussao);
 					System.out.println("O arquivo "+arquivos.getPath() +" foi lido!");
 					System.out.println("O arquivo tem "+discussao.getMensagem().size()+" mensagens");
@@ -66,7 +68,7 @@ public class LeMensagensXML {
 	 *            Le um log para testar a classificacao das mensagens
 	 *            relacionadas
 	 */
-	public List<Discussao> leituraXML(String nomeArquivo) {
+	public static List<Discussao> leituraXML(String nomeArquivo) {
 
 		String diretorio = nomeArquivo;
 		List<Discussao> discussoes = new ArrayList<Discussao>();
@@ -95,6 +97,8 @@ public class LeMensagensXML {
 					// Recupera as mensagens enviadas nesse log
 					List<Mensagem> mensagens = element.getValue().getMensagem();
 					discussao.setMensagens(mensagens);
+					discussao.setTitulo(element.getValue().getTitulo());
+					discussao.setData(element.getValue().getData());
 					discussoes.add(discussao);
 					System.out.println("O arquivo "+arquivos.getPath() +" foi lido!");
 				}
