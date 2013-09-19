@@ -81,26 +81,29 @@ public class LeMensagensXML {
 			// Busca todos os logs salvos no diretorio
 			File file = new File(diretorio);
 			File afile[] = file.listFiles();
-			for (int j = 0; j < afile.length; j++) {
-
-				
-				Discussao discussao = new Discussao();
-				File arquivos = afile[j];
-				
-				System.out.println(arquivos.getPath());
-				if (!arquivos.getPath().contains(".DS_Store")) {
-
-					// Recupera a discussao
-					JAXBElement<Discussao> element = (JAXBElement<Discussao>) unmarshaller
-							.unmarshal(new File(arquivos.getPath()));
-
-					// Recupera as mensagens enviadas nesse log
-					List<Mensagem> mensagens = element.getValue().getMensagem();
-					discussao.setMensagens(mensagens);
-					discussao.setTitulo(element.getValue().getTitulo());
-					discussao.setData(element.getValue().getData());
-					discussoes.add(discussao);
-					System.out.println("O arquivo "+arquivos.getPath() +" foi lido!");
+			if(afile != null)
+			{
+				for (int j = 0; j < afile.length; j++) {
+	
+					
+					Discussao discussao = new Discussao();
+					File arquivos = afile[j];
+					
+					System.out.println(arquivos.getPath());
+					if (!arquivos.getPath().contains(".DS_Store")) {
+	
+						// Recupera a discussao
+						JAXBElement<Discussao> element = (JAXBElement<Discussao>) unmarshaller
+								.unmarshal(new File(arquivos.getPath()));
+	
+						// Recupera as mensagens enviadas nesse log
+						List<Mensagem> mensagens = element.getValue().getMensagem();
+						discussao.setMensagens(mensagens);
+						discussao.setTitulo(element.getValue().getTitulo());
+						discussao.setData(element.getValue().getData());
+						discussoes.add(discussao);
+						System.out.println("O arquivo "+arquivos.getPath() +" foi lido!");
+					}
 				}
 
 			}

@@ -15,7 +15,7 @@ import com.swabunga.spell.event.StringWordTokenizer;
 
 public class CorretorGramatical implements SpellCheckListener {
 
-	public CorretorGramatical(String mensagem) 
+	private CorretorGramatical(String mensagem) 
 	{
 		try{
 		SpellDictionary dictionary = new SpellDictionaryHashMap(new File("src/recursos/wordlist_pt_br.txt"));

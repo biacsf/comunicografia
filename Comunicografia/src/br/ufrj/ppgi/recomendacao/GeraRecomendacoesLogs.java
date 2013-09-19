@@ -8,7 +8,7 @@ import br.ufrj.ppgi.grafo.entidades.Mensagem;
 
 public class GeraRecomendacoesLogs {
 
-	public static void main(String[] args){
+	private void reocmendacoesLogs(){
 		
 		LeMensagensXML leMsgs = new LeMensagensXML();
 			

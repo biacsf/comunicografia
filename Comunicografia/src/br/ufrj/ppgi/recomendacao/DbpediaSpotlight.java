@@ -38,7 +38,8 @@ import com.hp.hpl.jena.rdf.model.Literal;
 
 public class DbpediaSpotlight {
 
-	private static Map<String, String> recuperaEntidades(String mensagem,Map<String, String> mapa) {
+	private static Map<String, String> recuperaEntidades(String mensagem,
+			Map<String, String> mapa) {
 		DefaultHttpClient httpclient = new DefaultHttpClient();
 
 		URIBuilder builder = new URIBuilder();
@@ -54,6 +55,8 @@ public class DbpediaSpotlight {
 			uri = builder.build();
 
 		} catch (URISyntaxException e1) {
+			System.out.println("Erro ao conectar na URI");
+			return mapa;
 		}
 
 		HttpGet httpget = new HttpGet(uri);
@@ -63,15 +66,19 @@ public class DbpediaSpotlight {
 		try {
 			response = httpclient.execute(httpget);
 		} catch (Exception e) {
+			System.out.println("Erro ao recuperar resposta");
+			return mapa;
 		}
 		HttpEntity entity = response.getEntity();
-		
 
 		String xmlString = "";
 
 		try {
 			xmlString = EntityUtils.toString(entity, HTTP.UTF_8).trim();
 		} catch (Exception e) {
+			System.out.println("Erro ao recuperar resposta");
+			return mapa;
+
 		}
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		org.w3c.dom.Document doc = null;
@@ -81,6 +88,8 @@ public class DbpediaSpotlight {
 			inStream.setCharacterStream(new StringReader(xmlString));
 			doc = db.parse(inStream);
 		} catch (Exception e) {
+			System.out.println("Erro ao converter resposta para xml");
+			return mapa;
 
 		}
 
@@ -95,48 +104,52 @@ public class DbpediaSpotlight {
 				for (int j = 0; j < recordDataList.getLength(); ++j) {
 					Element recordData = (Element) recordDataList.item(j);
 					String palavras = recordData.getFirstChild().getNodeValue();
-					
-					
-					String sparqlQuery =
-					"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "+
-						"PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> "+
 
-						"SELECT ?comment WHERE { "+
-						"?entity rdfs:label ?label . "+
-						"?entity dbpedia-owl:abstract ?abstract . "+
-						"?entity rdfs:comment ?comment . "+
-						"?label <bif:contains> \"'"+palavras + "'\". "+
-						"?abstract <bif:contains> \"'"+palavras + "'\". "+
-						"?comment <bif:contains> \"'"+palavras + "'\". "+
-						"FILTER (lang(?abstract) = 'pt'). "+ 
-						"FILTER (lang(?comment) = 'pt'). "+
-						"} LIMIT 1";
+					String sparqlQuery = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "
+							+ "PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> "
+							+
 
-						// Cria uma query com o string
-						Query query = QueryFactory.create(sparqlQuery);
+							"SELECT ?comment WHERE { "
+							+ "?entity rdfs:label ?label . "
+							+ "?entity dbpedia-owl:abstract ?abstract . "
+							+ "?entity rdfs:comment ?comment . "
+							+ "?label <bif:contains> \"'"
+							+ palavras
+							+ "'\". "
+							+ "?abstract <bif:contains> \"'"
+							+ palavras
+							+ "'\". "
+							+ "?comment <bif:contains> \"'"
+							+ palavras
+							+ "'\". "
+							+ "FILTER (lang(?abstract) = 'pt'). "
+							+ "FILTER (lang(?comment) = 'pt'). " + "} LIMIT 1";
 
-						// Faz o sparql no servidor indicado
-						QueryExecution qexec = QueryExecutionFactory.sparqlService(
-								"http://dbpedia.org/sparql", query);
+					// Cria uma query com o string
+					Query query = QueryFactory.create(sparqlQuery);
 
-						// Recupera os resultados da query
-						ResultSet resultSet = qexec.execSelect();
-						String resumo = "";
+					// Faz o sparql no servidor indicado
+					QueryExecution qexec = QueryExecutionFactory.sparqlService(
+							"http://dbpedia.org/sparql", query);
 
-						for (; resultSet.hasNext();) {
-							QuerySolution soln = resultSet.nextSolution();
-							Literal l = soln.getLiteral("comment");
-							resumo = l.getString();
+					// Recupera os resultados da query
+					ResultSet resultSet = qexec.execSelect();
+					String resumo = "";
 
+					for (; resultSet.hasNext();) {
+						QuerySolution soln = resultSet.nextSolution();
+						Literal l = soln.getLiteral("comment");
+						resumo = l.getString();
+
+					}
+					qexec.close();
+
+					if (mensagem.contains(palavras)) {
+
+						if (!mapa.containsKey(palavras)) {
+							mapa.put(palavras, resumo);
 						}
-						qexec.close();
-
-						if (mensagem.contains(palavras)) {
-
-							if (!mapa.containsKey(palavras)) {
-								mapa.put(palavras, resumo);
-							}
-						}	
+					}
 				}
 			}
 		}
@@ -172,6 +185,8 @@ public class DbpediaSpotlight {
 				uri = builder.build();
 
 			} catch (URISyntaxException e1) {
+				System.out.println("Erro ao criar URI");
+				return mapa;
 			}
 
 			HttpGet httpget = new HttpGet(uri);
@@ -181,6 +196,8 @@ public class DbpediaSpotlight {
 			try {
 				response = httpclient.execute(httpget);
 			} catch (Exception e) {
+				System.out.println("Erro ao recuperar resposta");
+				return mapa;
 			}
 			HttpEntity entity = response.getEntity();
 
@@ -189,6 +206,8 @@ public class DbpediaSpotlight {
 			try {
 				xmlString = EntityUtils.toString(entity, HTTP.UTF_8).trim();
 			} catch (Exception e) {
+				System.out.println("Erro ao recuperar resposta");
+				return mapa;
 			}
 			DocumentBuilderFactory factory = DocumentBuilderFactory
 					.newInstance();
@@ -199,7 +218,8 @@ public class DbpediaSpotlight {
 				inStream.setCharacterStream(new StringReader(xmlString));
 				doc = db.parse(inStream);
 			} catch (Exception e) {
-
+				System.out.println("Erro ao converter resposta para xml");
+				return mapa;
 			}
 
 			NodeList recordList = doc.getElementsByTagName("srw:record");
@@ -230,17 +250,17 @@ public class DbpediaSpotlight {
 					}
 					if (mapa.containsKey(key)) {
 						String textoAntigo = mapa.get(key);
-						if(!textoAntigo.equals(""))
-						{
+						if (!textoAntigo.equals("")) {
 							textoAntigo = textoAntigo
 									+ " / Legislação relacionada: " + titulo
 									+ " - " + descricao;
 							mapa.put(key, textoAntigo);
-						}else{
+						} else {
 							textoAntigo = textoAntigo
-							+ " Legislação relacionada: " + titulo
-							+ " - " + descricao;
-					mapa.put(key, textoAntigo);
+									+ " Legislação relacionada: " + titulo
+									+ " - " + descricao;
+
+							mapa.put(key, textoAntigo);
 						}
 					} else {
 						mapa.put(key, titulo + " - " + descricao);
@@ -279,6 +299,7 @@ public class DbpediaSpotlight {
 			uri = builder.build();
 
 		} catch (URISyntaxException e1) {
+			return mapa;
 		}
 
 		HttpGet httpget = new HttpGet(uri);
@@ -288,6 +309,7 @@ public class DbpediaSpotlight {
 		try {
 			response = httpclient.execute(httpget);
 		} catch (Exception e) {
+			return mapa;
 		}
 		HttpEntity entity = response.getEntity();
 
@@ -296,6 +318,7 @@ public class DbpediaSpotlight {
 		try {
 			xmlString = EntityUtils.toString(entity, HTTP.UTF_8).trim();
 		} catch (Exception e) {
+			return mapa;
 		}
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		org.w3c.dom.Document doc = null;
@@ -305,6 +328,7 @@ public class DbpediaSpotlight {
 			inStream.setCharacterStream(new StringReader(xmlString));
 			doc = db.parse(inStream);
 		} catch (Exception e) {
+			return mapa;
 
 		}
 
@@ -335,8 +359,18 @@ public class DbpediaSpotlight {
 				}
 				if (mapa.containsKey(filtro)) {
 					String textoAntigo = mapa.get(filtro);
-					textoAntigo.concat(" " + titulo + " - " + descricao);
-					mapa.put(filtro, textoAntigo);
+					if (!textoAntigo.equals("")) {
+						textoAntigo = textoAntigo
+								+ " / Legislação relacionada: " + titulo
+								+ " - " + descricao;
+						mapa.put(filtro, textoAntigo);
+					} else {
+						textoAntigo = textoAntigo
+								+ " Legislação relacionada: " + titulo
+								+ " - " + descricao;
+
+						mapa.put(filtro, textoAntigo);
+					}
 				} else {
 					mapa.put(filtro, titulo + " - " + descricao);
 				}
@@ -447,13 +481,16 @@ public class DbpediaSpotlight {
 	public static String recuperaRecomendacoes(String texto) {
 		Map<String, String> mapa = new HashMap<String, String>();
 
-		mapa = recuperaEntidades(texto,mapa);
+		
 		// Busca as recomendacoes da dbpedia
 		mapa = retornaRecomendacoesDbpedia(texto, mapa);
-		// Busca as recomendacoes do LEXM
+		
+		mapa = recuperaEntidades(texto, mapa);
+		
+		// Busca as recomendacoes do LEXML
 		mapa = buscaDadosLexml(mapa);
 
-		// Busca as recomendacoes do LEXM com palavras comuns as leis
+		// Busca as recomendacoes do LEXML com palavras comuns as leis
 		if (TermosUteis.contemTermosLegislacao(texto)) {
 			String palavra = TermosUteis.palavraAposTermosLegislacao(texto);
 			if (!palavra.equals("")) {
@@ -468,8 +505,7 @@ public class DbpediaSpotlight {
 		for (String palavra : keyset) {
 			String recomendacao = mapa.get(palavra);
 			if (texto.contains(palavra)) {
-				texto = texto.replace(palavra, "<a href='' title='"
-						+ recomendacao + "'>" + palavra + "</a>");
+				texto = texto.replace(palavra, "<a href='' title='"+ recomendacao + "'>" + palavra + "</a>");
 			}
 
 		}

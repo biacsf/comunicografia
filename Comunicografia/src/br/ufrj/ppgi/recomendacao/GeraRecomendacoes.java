@@ -1,9 +1,8 @@
 package br.ufrj.ppgi.recomendacao;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 
 import br.ufrj.br.ppgi.preProcessamento.TratamentoTextual;
@@ -22,10 +21,11 @@ public class GeraRecomendacoes {
 
 			System.out.println("Erro ao tratar mensagem: "+ texto);
 		}
+		//Diretorio para salvar as mensagens enviadas na discussao
 		String diretorio = "src/recursos/recomendacao";
 
-		List<Discussao> discussoesGravadas = LeMensagensXML
-				.leituraXML(diretorio);
+		//Le as mensagens gravadas no diretorio
+		List<Discussao> discussoesGravadas = LeMensagensXML.leituraXML(diretorio);
 
 		Discussao discussaoAtual = new Discussao();
 
@@ -34,6 +34,7 @@ public class GeraRecomendacoes {
 			for (Discussao discussao : discussoesGravadas) {
 				if (discussao.getTitulo() != null
 						&& discussao.getTitulo().equals(idDiscussao)) {
+					//Recupera a discussao atual
 					discussaoAtual = discussao;
 				}
 			}
@@ -42,12 +43,10 @@ public class GeraRecomendacoes {
 		/* GRAVA A MENSAGEM ATUAL NA DISCUSSAO */
 		if (discussaoAtual != null && discussaoAtual.getTitulo() != null) {
 			String ultimoNumero = "";
-			String xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><discussao><titulo>"
-					+ idDiscussao + "</titulo><data></data>";
+			String xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><discussao><titulo>"+ idDiscussao + "</titulo><data></data>";
 			for (Mensagem mensagem : discussaoAtual.getMensagem()) {
 				try {
-					mensagem = TratamentoTextual
-							.executaTratamentosMensagemParaSalvar(mensagem);
+					mensagem = TratamentoTextual.executaTratamentosMensagemParaSalvar(mensagem);
 				} catch (Exception e) {
 					System.out.println("Erro tratar mensagem: " + mensagem);
 				}
@@ -66,17 +65,17 @@ public class GeraRecomendacoes {
 					+ "</texto><usuario>" + usuario
 					+ "</usuario></mensagem></discussao>";
 			try {
-				File arquivo = new File("src/recursos/recomendacao/"
+				File arquivo = new File(diretorio+"/"
 						+ idDiscussao + ".xml");
 				FileOutputStream fos = new FileOutputStream(arquivo);
 				fos.write(xml.getBytes());
 				fos.close();
 			} catch (Exception e) {
-				System.out.println("Erro ao escrever no log");
+				System.out.println("Erro ao escrever no log "+e);
 			}
 		} else {
 			try {
-				File arquivo = new File("src/recursos/recomendacao/"
+				File arquivo = new File(diretorio+"/"
 						+ idDiscussao + ".xml");
 				FileOutputStream fos = new FileOutputStream(arquivo);
 				String xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><discussao><titulo>"
@@ -89,19 +88,14 @@ public class GeraRecomendacoes {
 				fos.write(xml.getBytes());
 				fos.close();
 			} catch (Exception e) {
-				System.out.println("Erro ao escrever no log");
+				System.out.println("Erro ao escrever no log "+e);
 			}
 		}
-
-		/* Estrutura a mensagem de acordo com as referencias */
 
 		/* GERA AS RECOMENDACOES PARA A MENSAGEM ATUAL */
 		String recomendacao = DbpediaSpotlight.recuperaRecomendacoes(texto);
 		
-		System.out.println(recomendacao);
-
 		return recomendacao;
 
 	}
-
 }

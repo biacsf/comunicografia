@@ -58,7 +58,7 @@ public class TermosUteis {
 						{
 							return textoDividido[count];
 						}else{
-							if(textoDividido[count].equals("da") || textoDividido[count].equals("do") || textoDividido[count].equals("de"))
+							if(textoDividido[count].equals("da") || textoDividido[count].equals("do") || textoDividido[count].equals("de") || textoDividido[count].equals("d"))
 							{
 								int number = count+1;
 								return textoDividido[number];

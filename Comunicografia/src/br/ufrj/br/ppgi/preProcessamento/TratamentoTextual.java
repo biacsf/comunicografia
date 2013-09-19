@@ -103,7 +103,7 @@ public class TratamentoTextual {
 		}
 		return mensagens;
 	}
-	public static Mensagem executaTratamentosMensagem(Mensagem mensagem) throws FileNotFoundException, IOException
+	private static Mensagem executaTratamentosMensagem(Mensagem mensagem) throws FileNotFoundException, IOException
 	{
 		
 			String texto;
@@ -121,7 +121,8 @@ public class TratamentoTextual {
 			
 		
 		return mensagem;
-	}public static Mensagem executaTratamentosMensagemParaSalvar(Mensagem mensagem) throws FileNotFoundException, IOException
+	}
+	public static Mensagem executaTratamentosMensagemParaSalvar(Mensagem mensagem) throws FileNotFoundException, IOException
 	{
 		
 		String texto;
@@ -150,8 +151,6 @@ public class TratamentoTextual {
 			
 			texto = TratamentoTextual.converteParaMinuscula(mensagem);
 			
-			
-			//O corretor nao esta tendo bons resultados
 			//new CorretorGramatical(texto);
 			
 			//texto = TratamentoTextual.aplicaStemmingFrase(mensagem.getTexto());
