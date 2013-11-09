@@ -9,7 +9,9 @@ import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.br.BrazilianAnalyzer;
 import org.apache.lucene.analysis.core.StopFilter;
+import org.apache.lucene.analysis.standard.StandardTokenizer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
+import org.apache.lucene.analysis.util.CharArraySet;
 import org.apache.lucene.util.Version;
 
 import br.ufrj.ppgi.grafo.entidades.Mensagem;
@@ -66,20 +68,38 @@ public class TratamentoTextual {
 	private static String removeStopWords(String mensagem) throws IOException
 	{
 		Analyzer analyzer = new BrazilianAnalyzer(Version.LUCENE_42);
-		TokenStream tokenStream = analyzer.tokenStream(null, new StringReader(mensagem));
-		tokenStream = new StopFilter(Version.LUCENE_42, tokenStream, BrazilianAnalyzer.getDefaultStopSet());
-		CharTermAttribute cattr = tokenStream.addAttribute(CharTermAttribute.class);
+		TokenStream tokenStream = new StandardTokenizer(Version.LUCENE_42, new StringReader(mensagem));
+		CharArraySet stopSet = BrazilianAnalyzer.getDefaultStopSet();
+		stopSet.add("é");
+		stopSet.add("além");
+		stopSet.add("além");
+		stopSet.add("desse");
+		stopSet.add("nesse");
+		stopSet.add("ai");
+		stopSet.add("vc");
+		stopSet.add("voce");
+		stopSet.add("você");
+		stopSet.add("nisso");
+		stopSet.add("onde");
+		stopSet.add("no");
+		
+		
+		
+
+		
+		tokenStream = new StopFilter(Version.LUCENE_42, tokenStream, stopSet);
+		//CharTermAttribute cattr = tokenStream.getAttribute(CharTermAttribute.class);
+		CharTermAttribute termAttr = tokenStream.getAttribute(CharTermAttribute.class);
 		
 		tokenStream.reset();
-		StringBuffer sb = new StringBuffer();
-		while (tokenStream.incrementToken()) {
-		  sb.append(cattr.toString());
-		  sb.append(" ");
-		}
-		tokenStream.end();
-		tokenStream.close();
-		    
-	    return sb.toString();
+		StringBuilder sb = new StringBuilder();
+		  while (tokenStream.incrementToken()) {
+		        if (sb.length() > 0) {
+		            sb.append(" ");
+		        }
+		        sb.append(termAttr.toString());
+		    }
+		    return sb.toString();
 	
 
 	}
@@ -147,13 +167,27 @@ public class TratamentoTextual {
 	{
 		
 			String texto;
-			texto = TratamentoTextual.removeStopWords(mensagem);
 			
 			texto = TratamentoTextual.converteParaMinuscula(mensagem);
+			texto = TratamentoTextual.removeStopWords(mensagem);
+
 			
 			//new CorretorGramatical(texto);
 			
 			//texto = TratamentoTextual.aplicaStemmingFrase(mensagem.getTexto());
+						
+		
+		return texto;
+	}
+	
+	public static String executaTratamentosTextoParaFrequencias(String mensagem) throws FileNotFoundException, IOException
+	{
+		
+			String texto;			
+			texto = TratamentoTextual.converteParaMinuscula(mensagem);
+			
+			
+			texto = TratamentoTextual.aplicaStemmingFrase(mensagem);
 						
 		
 		return texto;

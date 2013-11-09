@@ -2,7 +2,6 @@ package br.ufrj.ppgi.recomendacao;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.util.Date;
 import java.util.List;
 
 import br.ufrj.br.ppgi.preProcessamento.TratamentoTextual;
@@ -13,7 +12,7 @@ import br.ufrj.ppgi.grafo.entidades.Mensagem;
 public class GeraRecomendacoes {
 
 	public static String geraRecomendacao(String texto, String usuario,
-			String idDiscussao) {
+			String idDiscussao, String diretorio) {
 		String textoSalvar="";
 		try {
 			 textoSalvar = TratamentoTextual.executaTratamentosTextoParaSalvar(texto);
@@ -21,8 +20,12 @@ public class GeraRecomendacoes {
 
 			System.out.println("Erro ao tratar mensagem: "+ texto);
 		}
+		
+		String[] idDividido = idDiscussao.split("@");
+		idDiscussao = idDividido[0];
+		
 		//Diretorio para salvar as mensagens enviadas na discussao
-		String diretorio = "src/recursos/recomendacao";
+		diretorio = diretorio+ "recursos/recomendacao";
 
 		//Le as mensagens gravadas no diretorio
 		List<Discussao> discussoesGravadas = LeMensagensXML.leituraXML(diretorio);
@@ -93,7 +96,7 @@ public class GeraRecomendacoes {
 		}
 
 		/* GERA AS RECOMENDACOES PARA A MENSAGEM ATUAL */
-		String recomendacao = DbpediaSpotlight.recuperaRecomendacoes(texto);
+		String recomendacao = DbpediaSpotlight.recuperaRecomendacoes(texto,diretorio);
 		
 		return recomendacao;
 

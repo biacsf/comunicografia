@@ -20,7 +20,7 @@ public class GeraRecomendacoesLogs {
 				
 			for(Mensagem mensagem:mensagens)
 			{
-				System.out.println(mensagem.getUsuario()+" : "+DbpediaSpotlight.recuperaRecomendacoes(mensagem.getTexto()));
+				//System.out.println(mensagem.getUsuario()+" : "+DbpediaSpotlight.recuperaRecomendacoes(mensagem.getTexto()));
 			}
 	
 		}
