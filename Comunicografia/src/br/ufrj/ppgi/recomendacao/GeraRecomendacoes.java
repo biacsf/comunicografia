@@ -13,6 +13,8 @@ public class GeraRecomendacoes {
 
 	public static String geraRecomendacao(String texto, String usuario,
 			String idDiscussao, String diretorio) {
+		
+		String textoAnterior ="";
 		String textoSalvar="";
 		try {
 			 textoSalvar = TratamentoTextual.executaTratamentosTextoParaSalvar(texto);
@@ -58,6 +60,7 @@ public class GeraRecomendacoes {
 						+ "</texto><usuario>" + mensagem.getUsuario()
 						+ "</usuario></mensagem>";
 				ultimoNumero = mensagem.getNumero();
+				textoAnterior+=" "+mensagem.getTexto();
 			}
 			Integer numero = Integer.valueOf(ultimoNumero);
 			numero++;
@@ -94,9 +97,12 @@ public class GeraRecomendacoes {
 				System.out.println("Erro ao escrever no log "+e);
 			}
 		}
+		
+		textoAnterior+=" "+texto;
+
 
 		/* GERA AS RECOMENDACOES PARA A MENSAGEM ATUAL */
-		String recomendacao = DbpediaSpotlight.recuperaRecomendacoes(texto,diretorio);
+		String recomendacao = DbpediaSpotlight.recuperaRecomendacoes(texto,diretorio,textoAnterior);
 		
 		return recomendacao;
 

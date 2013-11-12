@@ -47,31 +47,30 @@ import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.Literal;
 
 public class DbpediaSpotlight {
-	
-	private static BigDecimal semanticSimilarity(String a,String b)
-	{
-		
-		b = b.replace(",", "").replace(".", "").replace("?", "").replace("!", "").trim().replace("\"","\\\"");
-		a = a.replace(",", "").replace(".", "").replace("?", "").replace("!", "").trim().replace("\"","\\\"");
-		
+
+	private static BigDecimal semanticSimilarity(String a, String b) {
+
+		b = b.replace(",", "").replace(".", "").replace("?", "")
+				.replace("!", "").trim().replace("\"", "\\\"");
+		a = a.replace(",", "").replace(".", "").replace("?", "")
+				.replace("!", "").trim().replace("\"", "\\\"");
+
 		b = Normalizer.normalize(b, Normalizer.Form.NFD);
 		b = b.replaceAll("[^\\p{ASCII}]", "").trim();
-		
+
 		a = Normalizer.normalize(a, Normalizer.Form.NFD);
 		a = a.replaceAll("[^\\p{ASCII}]", "").trim();
-		
-		if(a.length() >= 120)
-		{
+
+		if (a.length() >= 120) {
 			a = a.substring(0, 120);
 		}
-		if(b.length() >= 120)
-		{
+		if (b.length() >= 120) {
 			b = b.substring(0, 120);
 		}
-		
+
 		URIBuilder builder = new URIBuilder();
-		builder.setScheme("https")
-				.setHost("amtera.p.mashape.com/relatedness/pt");
+		builder.setScheme("https").setHost(
+				"amtera.p.mashape.com/relatedness/pt");
 
 		URI uri = null;
 		try {
@@ -81,22 +80,21 @@ public class DbpediaSpotlight {
 			System.out.println("Erro ao conectar na URI");
 			return null;
 		}
-		
-		
 
 		HttpPost httpget = new HttpPost(uri);
-		httpget.setHeader("X-Mashape-Authorization", "I9yQM1U2l2D1UeyNw1Ms7J3oa9bQ8rxB");
+		httpget.setHeader("X-Mashape-Authorization",
+				"I9yQM1U2l2D1UeyNw1Ms7J3oa9bQ8rxB");
 		httpget.setHeader("Content-type", "application/json");
-		
+
 		StringEntity params = null;
 		try {
-			params = new StringEntity("{\"t1\":\""+a+"\",\"t2\":\""+b+"\"}");
+			params = new StringEntity("{\"t1\":\"" + a + "\",\"t2\":\"" + b
+					+ "\"}");
 		} catch (UnsupportedEncodingException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		httpget.setEntity(params);
-
 
 		HttpParams httpParameters = new BasicHttpParams();
 		// Set the timeout in milliseconds until a connection is established.
@@ -118,7 +116,7 @@ public class DbpediaSpotlight {
 			System.out.println("Erro ao recuperar resposta");
 			return null;
 		}
-		
+
 		HttpEntity entity = response.getEntity();
 
 		JsonElement jelement = null;
@@ -137,9 +135,8 @@ public class DbpediaSpotlight {
 
 	}
 
-
 	private static Map<String, String> recuperaEntidades(String mensagem,
-			Map<String, String> mapa) {
+			Map<String, String> mapa, String textoAnterior) {
 
 		URIBuilder builder = new URIBuilder();
 		builder.setScheme("http")
@@ -257,10 +254,12 @@ public class DbpediaSpotlight {
 					}
 					if (mensagem.contains(palavras)) {
 						for (int count = (mensagem.indexOf(palavras)
-								+ palavras.length() + 1); count < mensagem.length(); count++) {
-							if (String.valueOf(mensagem.charAt(count)).equals(" ")) {
-								String palavraComparar = mensagem.substring(
-										(mensagem.indexOf(palavras)
+								+ palavras.length() + 1); count < mensagem
+								.length(); count++) {
+							if (String.valueOf(mensagem.charAt(count)).equals(
+									" ")) {
+								String palavraComparar = mensagem
+										.substring((mensagem.indexOf(palavras)
 												+ palavras.length() + 1), count);
 								if (palavraComparar.equals("de")
 										|| palavraComparar.equals("do")
@@ -270,10 +269,12 @@ public class DbpediaSpotlight {
 										|| palavraComparar.equals("a")) {
 									String palavraConcat = "";
 									Boolean achou = false;
-									for (int count2 = (mensagem.indexOf(palavraComparar)
+									for (int count2 = (mensagem
+											.indexOf(palavraComparar)
 											+ palavraComparar.length() + 1); count2 < mensagem
 											.length(); count2++) {
-										if (String.valueOf(mensagem.charAt(count2))
+										if (String.valueOf(
+												mensagem.charAt(count2))
 												.equals(" ")) {
 											palavraConcat = mensagem
 													.substring(
@@ -286,13 +287,17 @@ public class DbpediaSpotlight {
 										}
 									}
 									if (!achou) {
-										palavraConcat = mensagem.substring(
-												(mensagem.indexOf(palavraComparar)
-														+ palavraComparar.length() + 1),
-												mensagem.length());
+										palavraConcat = mensagem
+												.substring(
+														(mensagem
+																.indexOf(palavraComparar)
+																+ palavraComparar
+																		.length() + 1),
+														mensagem.length());
 
 									}
-									palavras = palavras + " " +palavraComparar+" "+ palavraConcat;
+									palavras = palavras + " " + palavraComparar
+											+ " " + palavraConcat;
 								}
 							}
 						}
@@ -329,32 +334,35 @@ public class DbpediaSpotlight {
 					// Recupera os resultados da query
 					ResultSet resultSet = qexec.execSelect();
 					String resumo = "";
-					
-					Map<BigDecimal,String> similaridade = new HashMap<BigDecimal, String>();
+
+					Map<BigDecimal, String> similaridade = new HashMap<BigDecimal, String>();
 
 					for (; resultSet.hasNext();) {
 						QuerySolution soln = resultSet.nextSolution();
-						Literal l = soln.getLiteral("comment");						
-						similaridade.put(semanticSimilarity(l.getString(), mensagem),l.getString());
+						Literal l = soln.getLiteral("comment");
+						similaridade
+								.put(semanticSimilarity(l.getString(),
+										textoAnterior), l.getString());
 
 					}
-					
+
 					BigDecimal valor = null;
-					
-					for(BigDecimal key: similaridade.keySet())
-					{
-						if(valor == null || (key.compareTo(valor) == 1))
-						{
-							valor = key;
+
+					for (BigDecimal key : similaridade.keySet()) {
+						if (valor == null || (key.compareTo(valor) == 1)) {
+							if (key.compareTo(new BigDecimal(0.1)) == 1) {
+								valor = key;
+							}
 						}
 					}
 					resumo = similaridade.get(valor);
-					
+
 					qexec.close();
 
 					Boolean salvou = false;
 
-					if (mensagem.contains(palavras) && !resumo.equals("")) {
+					if (mensagem.contains(palavras) && resumo != null
+							&& !resumo.equals("")) {
 
 						if (!mapa.containsKey(palavras)) {
 
@@ -383,8 +391,7 @@ public class DbpediaSpotlight {
 	}
 
 	private static Map<String, String> recuperaEntidadesLtasks(String mensagem,
-			Map<String, String> mapa) {
-		
+			Map<String, String> mapa, String textoAnterior) {
 
 		URIBuilder builder = new URIBuilder();
 		builder.setScheme("http").setHost("api.ltasks.com/app/v0b/ner")
@@ -509,7 +516,8 @@ public class DbpediaSpotlight {
 									|| palavraComparar.equals("a")) {
 								String palavraConcat = "";
 								Boolean achou = false;
-								for (int count2 = (mensagem.indexOf(palavraComparar)
+								for (int count2 = (mensagem
+										.indexOf(palavraComparar)
 										+ palavraComparar.length() + 1); count2 < mensagem
 										.length(); count2++) {
 									if (String.valueOf(mensagem.charAt(count2))
@@ -525,13 +533,17 @@ public class DbpediaSpotlight {
 									}
 								}
 								if (!achou) {
-									palavraConcat = mensagem.substring(
-											(mensagem.indexOf(palavraComparar)
-													+ palavraComparar.length() + 1),
-											mensagem.length());
+									palavraConcat = mensagem
+											.substring(
+													(mensagem
+															.indexOf(palavraComparar)
+															+ palavraComparar
+																	.length() + 1),
+													mensagem.length());
 
 								}
-								palavras = palavras + " " +palavraComparar+" "+ palavraConcat;
+								palavras = palavras + " " + palavraComparar
+										+ " " + palavraConcat;
 							}
 						}
 					}
@@ -568,23 +580,27 @@ public class DbpediaSpotlight {
 				// Recupera os resultados da query
 				ResultSet resultSet = qexec.execSelect();
 				String resumo = "";
-				
-				Map<BigDecimal,String> similaridade = new HashMap<BigDecimal, String>();
+
+				Map<BigDecimal, String> similaridade = new HashMap<BigDecimal, String>();
 
 				for (; resultSet.hasNext();) {
 					QuerySolution soln = resultSet.nextSolution();
-					Literal l = soln.getLiteral("comment");						
-					similaridade.put(semanticSimilarity(l.getString(), mensagem),l.getString());
+					Literal l = soln.getLiteral("comment");
+					similaridade.put(
+							semanticSimilarity(l.getString(), textoAnterior),
+							l.getString());
 
 				}
-				
+
 				BigDecimal valor = null;
-				
-				for(BigDecimal key: similaridade.keySet())
-				{
-					if(valor == null || (key.compareTo(valor) == 1))
-					{
-						valor = key;
+
+				for (BigDecimal key : similaridade.keySet()) {
+					if (valor == null || (key.compareTo(valor) == 1)) {
+
+						if (key.compareTo(new BigDecimal(0.1)) == 1) {
+							valor = key;
+						}
+
 					}
 				}
 				resumo = similaridade.get(valor);
@@ -592,7 +608,8 @@ public class DbpediaSpotlight {
 
 				Boolean salvou = false;
 
-				if (mensagem.contains(palavras) && !resumo.equals("")) {
+				if (mensagem.contains(palavras) && resumo != null
+						&& !resumo.equals("")) {
 
 					if (!mapa.containsKey(palavras)) {
 
@@ -704,8 +721,7 @@ public class DbpediaSpotlight {
 				System.out.println("Erro ao converter resposta para xml");
 				return mapa;
 			}
-			Map<BigDecimal,String> similaridade = new HashMap<BigDecimal, String>();
-
+			Map<BigDecimal, String> similaridade = new HashMap<BigDecimal, String>();
 
 			NodeList recordList = doc.getElementsByTagName("srw:record");
 			for (int i = 0; i < recordList.getLength(); ++i) {
@@ -733,38 +749,41 @@ public class DbpediaSpotlight {
 								.getNodeValue();
 						descricao = subjectText;
 					}
-					
-					similaridade.put(semanticSimilarity(descricao, mapa.get(key)),titulo+" - "+descricao);
-					
-				
+
+					similaridade.put(
+							semanticSimilarity(descricao, mapa.get(key)),
+							titulo + " - " + descricao);
+
 				}
 			}
 			BigDecimal valor = null;
-			
-			for(BigDecimal key1: similaridade.keySet())
-			{
-				if(valor == null || (key1.compareTo(valor) == 1))
-				{
-					valor = key1;
+
+			for (BigDecimal key1 : similaridade.keySet()) {
+				if (valor == null || (key1.compareTo(valor) == 1)) {
+					if (key1.compareTo(new BigDecimal(0.1)) == 1) {
+						valor = key1;
+					}
 				}
 			}
 			String resumo = similaridade.get(valor);
-			
-			
-			if (mapa.containsKey(key)) {
-				String textoAntigo = mapa.get(key);
-				if (!textoAntigo.equals("")) {
-					textoAntigo = textoAntigo
-							+ " / Legislação relacionada: " + resumo;
-					mapa.put(key, textoAntigo);
-				} else {
-					textoAntigo = textoAntigo
-							+ " Legislação relacionada: " + resumo;
 
-					mapa.put(key, textoAntigo);
+			if (resumo != null) {
+
+				if (mapa.containsKey(key)) {
+					String textoAntigo = mapa.get(key);
+					if (!textoAntigo.equals("")) {
+						textoAntigo = textoAntigo
+								+ " / Legislação relacionada: " + resumo;
+						mapa.put(key, textoAntigo);
+					} else {
+						textoAntigo = textoAntigo + " Legislação relacionada: "
+								+ resumo;
+
+						mapa.put(key, textoAntigo);
+					}
+				} else {
+					mapa.put(key, resumo);
 				}
-			} else {
-				mapa.put(key, resumo);
 			}
 		}
 
@@ -773,7 +792,7 @@ public class DbpediaSpotlight {
 	}
 
 	private static Map<String, String> buscaDadosLexml(String filtro,
-			Map<String, String> mapa,String mensagem) {
+			Map<String, String> mapa, String mensagem, String textoAnterior) {
 
 		URIBuilder builder = new URIBuilder();
 		builder.setScheme("http")
@@ -841,7 +860,7 @@ public class DbpediaSpotlight {
 			return mapa;
 
 		}
-		Map<BigDecimal,String> similaridade = new HashMap<BigDecimal, String>();
+		Map<BigDecimal, String> similaridade = new HashMap<BigDecimal, String>();
 
 		NodeList recordList = doc.getElementsByTagName("srw:record");
 		for (int i = 0; i < recordList.getLength(); ++i) {
@@ -869,38 +888,37 @@ public class DbpediaSpotlight {
 					descricao = subjectText;
 				}
 
-								
-				similaridade.put(semanticSimilarity(descricao, mensagem),titulo+" - "+descricao);
+				similaridade.put(semanticSimilarity(descricao, textoAnterior),
+						titulo + " - " + descricao);
 
-				
-				
-				
 			}
 		}
 		BigDecimal valor = null;
-		
-		for(BigDecimal key: similaridade.keySet())
-		{
-			if(valor == null || (key.compareTo(valor) == 1))
-			{
-				valor = key;
+
+		for (BigDecimal key : similaridade.keySet()) {
+			if (valor == null || (key.compareTo(valor) == 1)) {
+				if (key.compareTo(new BigDecimal(0.1)) == 1) {
+					valor = key;
+				}
 			}
 		}
 		String resumo = similaridade.get(valor);
-		if (mapa.containsKey(filtro)) {
-			String textoAntigo = mapa.get(filtro);
-			if (!textoAntigo.equals("")) {
-				textoAntigo = textoAntigo
-						+ " / Legislação relacionada: " + resumo;
-				mapa.put(filtro, textoAntigo);
-			} else {
-				textoAntigo = textoAntigo + " Legislação relacionada: "
-						+resumo;
+		if (resumo != null) {
+			if (mapa.containsKey(filtro)) {
+				String textoAntigo = mapa.get(filtro);
+				if (!textoAntigo.equals("")) {
+					textoAntigo = textoAntigo + " / Legislação relacionada: "
+							+ resumo;
+					mapa.put(filtro, textoAntigo);
+				} else {
+					textoAntigo = textoAntigo + " Legislação relacionada: "
+							+ resumo;
 
-				mapa.put(filtro, textoAntigo);
+					mapa.put(filtro, textoAntigo);
+				}
+			} else {
+				mapa.put(filtro, resumo);
 			}
-		} else {
-			mapa.put(filtro, resumo);
 		}
 		return mapa;
 
@@ -1004,7 +1022,7 @@ public class DbpediaSpotlight {
 
 				Boolean salvou = false;
 
-				if (texto.contains(palavra) && !resumo.equals("")) {
+				if (texto.contains(palavra) && resumo != null && !resumo.equals("")) {
 
 					if (!mapa.containsKey(palavra)) {
 
@@ -1034,17 +1052,18 @@ public class DbpediaSpotlight {
 
 	}
 
-	public static String recuperaRecomendacoes(String texto, String diretorio) {
+	public static String recuperaRecomendacoes(String texto, String diretorio,
+			String textoAnterior) {
 		Map<String, String> mapa = new HashMap<String, String>();
-		
-		// Busca recomendacoes do ltasks
-		mapa = recuperaEntidadesLtasks(texto, mapa);
 
 		// Busca as recomendacoes da dbpedia
 		mapa = retornaRecomendacoesDbpedia(texto, mapa);
 
+		// Busca recomendacoes do ltasks
+		mapa = recuperaEntidadesLtasks(texto, mapa, textoAnterior);
+
 		// Busca recomendacoes do alchemyapi
-		mapa = recuperaEntidades(texto, mapa);
+		mapa = recuperaEntidades(texto, mapa, textoAnterior);
 
 		// Busca as recomendacoes do LEXML
 		// mapa = buscaDadosLexml(mapa);
@@ -1055,17 +1074,19 @@ public class DbpediaSpotlight {
 			if (!palavra.equals("")) {
 				// Recomendacao a partir da palavra apos o termo legislativo
 
-				mapa = buscaDadosLexml(palavra, mapa,texto);
+				mapa = buscaDadosLexml(palavra, mapa, texto, textoAnterior);
 			}
 
 		}
 
 		if (TermosUteis.contemPalavra(texto)) {
-			mapa = buscaDadosLexml(TermosUteis.palavraAposPalavra(texto), mapa,texto);
+			mapa = buscaDadosLexml(TermosUteis.palavraAposPalavra(texto), mapa,
+					texto, textoAnterior);
 		}
 
 		if (!buscaSiglas(texto).equals("")) {
-			mapa = buscaDadosLexml(buscaSiglas(texto), mapa,texto);
+			mapa = buscaDadosLexml(buscaSiglas(texto), mapa, texto,
+					textoAnterior);
 		}
 
 		// if(TermosUteis.contemDuvida(texto))
