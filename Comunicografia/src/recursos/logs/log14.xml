@@ -4,27 +4,27 @@
 	<data></data>
 	<mensagem>
 		<numero>1</numero>
-		<texto>patriciaaa</texto>
-		<usuario>Bianca</usuario>
+		<texto>Usuario2</texto>
+		<usuario>Usuario1</usuario>
 		<tipo>cumprimento</tipo>
 	</mensagem>
 	<mensagem>
 		<numero>2</numero>
 		<texto>oi</texto>
-		<usuario>Patricia</usuario>
+		<usuario>Usuario2</usuario>
 		<tipo>cumprimento</tipo>
 		<referenciaTreinamento>1</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>3</numero>
 		<texto>alguem mecheu hoje no projeto?</texto>
-		<usuario>Bianca</usuario>
+		<usuario>Usuario1</usuario>
 		<tipo>pergunta</tipo>
 	</mensagem>
 	<mensagem>
 		<numero>4</numero>
 		<texto>no projeto nao.. mexeu no banco</texto>
-		<usuario>Patricia</usuario>
+		<usuario>Usuario2</usuario>
 		<tipo>resposta</tipo>
 		<referenciaTreinamento>3</referenciaTreinamento>
 	</mensagem>
@@ -32,14 +32,14 @@
 		<numero>5</numero>
 		<texto>em alguma coisa no core?
 			ta dando erro no controle de acesso aqui</texto>
-		<usuario>Bianca</usuario>
+		<usuario>Usuario1</usuario>
 		<tipo>pergunta</tipo>
 	</mensagem>
 	<mensagem>
 		<numero>6</numero>
 		<texto>o vinicios mexeu na classe que vc ta mexendo no core.
 			mas foi ontem. ele soh trocou um atributo que estava com '_' no nome</texto>
-		<usuario>Patricia</usuario>
+		<usuario>Usuario2</usuario>
 		<tipo>resposta</tipo>
 		<referenciaTreinamento>5</referenciaTreinamento>
 	</mensagem>
@@ -54,13 +54,13 @@
 		<numero>8</numero>
 		<texto>se nao me engano data_inicio
 			ficou dataInicio</texto>
-		<usuario>Patricia</usuario>
+		<usuario>Usuario2</usuario>
 		<referenciaTreinamento>5</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>9</numero>
 		<texto>nao é isso que deu erro aqui nao</texto>
-		<usuario>Bianca</usuario>
+		<usuario>Usuario1</usuario>
 		<referenciaTreinamento>8</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
@@ -70,7 +70,7 @@
 			tenta identificar ae e me fala
 			se nao conseguir, me fala tb
 			rsrs</texto>
-		<usuario>Patricia</usuario>
+		<usuario>Usuario2</usuario>
 		<referenciaTreinamento>9</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
@@ -79,13 +79,13 @@
 			ele nao estava atualizando
 			ai eu abri o projeto dinovo
 			muito estranho isso</texto>
-		<usuario>Bianca</usuario>
+		<usuario>Usuario1</usuario>
 		<referenciaTreinamento>10</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>12</numero>
 		<texto>eh.. mas que bom que deu certo</texto>
-		<usuario>Patricia</usuario>
+		<usuario>Usuario2</usuario>
 		<referenciaTreinamento>11</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
@@ -93,7 +93,7 @@
 		<texto>É
 			se eu nao tivesse dado comit em tudo ontem eu nao ia poder dar mais
 			hehehe</texto>
-		<usuario>Bianca</usuario>
+		<usuario>Usuario1</usuario>
 		<referenciaTreinamento>12</referenciaTreinamento>
 	</mensagem>
 	<mensagem>

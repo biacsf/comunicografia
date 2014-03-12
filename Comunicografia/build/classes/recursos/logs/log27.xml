@@ -4,14 +4,14 @@
 	<data></data>
 	<mensagem>
 		<numero>1</numero>
-		<texto>Carlaaa</texto>
-		<usuario>Patricia</usuario>
+		<texto>Usuario1</texto>
+		<usuario>Usuario2</usuario>
 		<tipo>cumprimento</tipo>
 	</mensagem>
 	<mensagem>
 		<numero>2</numero>
 		<texto>oiee</texto>
-		<usuario>Carla</usuario>
+		<usuario>Usuario1</usuario>
 		<tipo>cumprimento</tipo>
 		<referenciaTreinamento>1</referenciaTreinamento>
 	</mensagem>
@@ -19,20 +19,20 @@
 		<numero>3</numero>
 		<texto>vc mandou email p prof de empreendimentos ?
 			quer q eu mande tb ? </texto>
-		<usuario>Patricia</usuario>
+		<usuario>Usuario2</usuario>
 		<tipo>pergunta</tipo>
 	</mensagem>
 	<mensagem>
 		<numero>4</numero>
 		<texto>mandei. Pode mandar tb</texto>
-		<usuario>Carla</usuario>
+		<usuario>Usuario1</usuario>
 		<tipo>resposta</tipo>
 		<referenciaTreinamento>3</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>5</numero>
 		<texto>blza. Mandou teu login e senha?</texto>
-		<usuario>Patricia</usuario>
+		<usuario>Usuario2</usuario>
 		<tipo>pergunta</tipo>
 		<referenciaTreinamento>4</referenciaTreinamento>
 	</mensagem>
@@ -40,14 +40,14 @@
 		<numero>6</numero>
 		<texto>ah
 			esse n mandei</texto>
-		<usuario>Carla</usuario>
+		<usuario>Usuario1</usuario>
 		<tipo>resposta</tipo>
 		<referenciaTreinamento>5</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>7</numero>
 		<texto>rsrsrs. Ta chovendo.</texto>
-		<usuario>Patricia</usuario>
+		<usuario>Usuario2</usuario>
 	</mensagem>
 	<mensagem>
 		<numero>8</numero>
@@ -55,38 +55,38 @@
 			aki n da pra ver
 			agente fica
 			trancado</texto>
-		<usuario>Carla</usuario>
+		<usuario>Usuario1</usuario>
 		<referenciaTreinamento>7</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>9</numero>
 		<texto> o nome do menino eh fabio alberto neh ?</texto>
-		<usuario>Patricia</usuario>
+		<usuario>Usuario2</usuario>
 		<tipo>pergunta</tipo>
 	</mensagem>
 	<mensagem>
 		<numero>10</numero>
 		<texto>xi.Nao sei. Pq?</texto>
-		<usuario>Carla</usuario>
+		<usuario>Usuario1</usuario>
 		<tipo>resposta</tipo>
 		<referenciaTreinamento>9</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>11</numero>
 		<texto>To mandando pro grupo. Sabe o site?</texto>
-		<usuario>Patricia</usuario>
+		<usuario>Usuario2</usuario>
 		<tipo>pergunta</tipo>
 	</mensagem>
 	<mensagem>
 		<numero>12</numero>
 		<texto>Vlw, nao sei nao</texto>
-		<usuario>Carla</usuario>
+		<usuario>Usuario1</usuario>
 		<tipo>resposta</tipo>
 		<referenciaTreinamento>11</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>13</numero>
 		<texto>To indo nessa entao. Bjos</texto>
-		<usuario>Patricia</usuario>
+		<usuario>Usuario2</usuario>
 	</mensagem>
 </discussao>

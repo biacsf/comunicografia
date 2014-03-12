@@ -4,41 +4,41 @@
 	<data></data>
 	<mensagem>
 		<numero>1</numero>
-		<texto>Luciaaaaa</texto>
-		<usuario>Diogo</usuario>
+		<texto>Usuario2</texto>
+		<usuario>Usuario1</usuario>
 		<tipo>cumprimento</tipo>
 	</mensagem>
 	<mensagem>
 		<numero>2</numero>
-		<texto>Diogguinhu. Ta tao longe</texto>
-		<usuario>Lucia</usuario>
+		<texto>Usuario1. Ta tao longe</texto>
+		<usuario>Usuario2</usuario>
 		<tipo>cumprimento</tipo>
 		<referenciaTreinamento>1</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>3</numero>
 		<texto>heuaheua.fala ae, qq vc tah fazendo de bom???</texto>
-		<usuario>Diogo</usuario>
+		<usuario>Usuario1</usuario>
 		<tipo>pergunta</tipo>
 	</mensagem>
 	<mensagem>
 		<numero>4</numero>
 		<texto>nd e vc?</texto>
-		<usuario>Lucia</usuario>
+		<usuario>Usuario2</usuario>
 		<tipo>resposta</tipo>
 		<referenciaTreinamento>3</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>5</numero>
 		<texto>lendo o G1. hahahahaha</texto>
-		<usuario>Diogo</usuario>
+		<usuario>Usuario1</usuario>
 		<tipo>resposta</tipo>
 		<referenciaTreinamento>4</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>6</numero>
 		<texto>kkkkkkk</texto>
-		<usuario>Lucia</usuario>
+		<usuario>Usuario2</usuario>
 	</mensagem>
 </discussao>
 

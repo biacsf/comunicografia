@@ -8,13 +8,13 @@
 			passo a passo e ideias bem legais:
 
 			http://picasaweb.google.com/scsosorio/PinturaEmTecido</texto>
-		<usuario>Sonia</usuario>
+		<usuario>Usuario1</usuario>
 	</mensagem>
 	<mensagem>
 		<numero>2</numero>
 		<texto>Adorei
 			Obrigada</texto>
-		<usuario>Paula</usuario>
+		<usuario>Usuario2</usuario>
 		<referenciaTreinamento>1</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
@@ -22,21 +22,21 @@
 		<texto>Que legais as figurinhas. Estou precisando renovar o meu stock
 			Tenho algumas revistas antigas. Vou ver se no fim de semana crio uma
 			conta Picasa e coloco l· algumas... Ai a falta de tempo!!!, ehehehe</texto>
-		<usuario>Veiga</usuario>
+		<usuario>Usuario3</usuario>
 		<referenciaTreinamento>1</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>4</numero>
 		<texto>eu tenho essa revista e tem coisas lindas
 			qd a vi nao resisti</texto>
-		<usuario>Rute</usuario>
+		<usuario>Usuario4</usuario>
 		<referenciaTreinamento>1</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>5</numero>
 		<texto>Espero que tenha mais passo a passo...
 </texto>
-		<usuario>Flor</usuario>
+		<usuario>Usuario5</usuario>
 		<referenciaTreinamento>1</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
@@ -46,12 +46,12 @@
 
 </texto>
 		<referenciaTreinamento>1</referenciaTreinamento>
-		<usuario>Flor</usuario>
+		<usuario>Usuario5</usuario>
 	</mensagem>
 	<mensagem>
 		<numero>7</numero>
-		<texto>Flor, vou verificar se tenho um desse pincel aqui</texto>
-		<usuario>Sonia</usuario>
+		<texto>Usuario5, vou verificar se tenho um desse pincel aqui</texto>
+		<usuario>Usuario1</usuario>
 		<referenciaTreinamento>6</referenciaTreinamento>
 	</mensagem>
 </discussao>

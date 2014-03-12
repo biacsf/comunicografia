@@ -4,48 +4,48 @@
 	<data></data>
 	<mensagem>
 		<numero>1</numero>
-		<texto>Sonia</texto>
-		<usuario>Ana</usuario>
+		<texto>Usuario2</texto>
+		<usuario>Usuario1</usuario>
 		<tipo>cumprimento</tipo>
 	</mensagem>
 	<mensagem>
 		<numero>2</numero>
 		<texto>oie</texto>
-		<usuario>Sonia</usuario>
+		<usuario>Usuario2</usuario>
 		<tipo>cumprimento</tipo>
 		<referenciaTreinamento>1</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>3</numero>
 		<texto>mandou email com seu login? rs</texto>
-		<usuario>Ana</usuario>
+		<usuario>Usuario1</usuario>
 		<tipo>pergunta</tipo>
 	</mensagem>
 	<mensagem>
 		<numero>4</numero>
 		<texto>sim</texto>
-		<usuario>Sonia</usuario>
+		<usuario>Usuario2</usuario>
 		<tipo>resposta</tipo>
 		<referenciaTreinamento>3</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>5</numero>
 		<texto>e ele respondeu ?</texto>
-		<usuario>Ana</usuario>
+		<usuario>Usuario1</usuario>
 		<tipo>pergunta</tipo>
 		<referenciaTreinamento>4</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>6</numero>
 		<texto>ainda nao. Se quiser pode mandar email tb</texto>
-		<usuario>Sonia</usuario>
+		<usuario>Usuario2</usuario>
 		<tipo>resposta</tipo>
 		<referenciaTreinamento>5</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>7</numero>
 		<texto>blza</texto>
-		<usuario>Ana</usuario>
+		<usuario>Usuario1</usuario>
 		<referenciaTreinamento>6</referenciaTreinamento>
 	</mensagem>
 </discussao>

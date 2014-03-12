@@ -20,12 +20,12 @@
 	<mensagem>
 		<numero>3</numero>
 		<texto>vai ter q voltar versao. Pq ou funciona ou nao funciona</texto>
-		<usuario>Usuario1</usuario>
+		<usuario>Usuario3</usuario>
 	</mensagem>
 	<mensagem>
 		<numero>4</numero>
 		<texto> nao precisa voltar versao pq ta funcionando as telas..</texto>
-		<usuario>Usuario2</usuario>
+		<usuario>Usuario4</usuario>
 		<referenciaTreinamento>3</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
@@ -53,7 +53,7 @@
 		<numero>8</numero>
 		<texto>caramba... la embaixo na lanchonete ta cheiao... todo mundo
 			desce pra comer essa hora oO :-D</texto>
-		<usuario>Usuario2</usuario>
+		<usuario>Usuario3</usuario>
 	</mensagem>
 	<mensagem>
 		<numero>9</numero>
@@ -69,7 +69,7 @@
 	<mensagem>
 		<numero>11</numero>
 		<texto>ta faltando colocar codigo sap em algumas</texto>
-		<usuario>Usuario1</usuario>
+		<usuario>Usuario4</usuario>
 		<referenciaTreinamento>10</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
@@ -91,8 +91,8 @@
 	</mensagem>
 	<mensagem>
 		<numero>13</numero>
-		<texto>vou sair as 18h</texto>
-		<usuario>Usuario2</usuario>
+		<texto>vou sair as 18h tb</texto>
+		<usuario>Usuario3</usuario>
 		<referenciaTreinamento>12</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
@@ -114,7 +114,7 @@
 	<mensagem>
 		<numero>17</numero>
 		<texto>pow... nao tem mais chocolate nas maquinas oO</texto>
-		<usuario>Usuario2</usuario>
+		<usuario>Usuario4</usuario>
 	</mensagem>
 	<mensagem>
 		<numero>18</numero>
@@ -125,7 +125,7 @@
 	<mensagem>
 		<numero>19</numero>
 		<texto>é, nao tem mais msm</texto>
-		<usuario>Usuario2</usuario>
+		<usuario>Usuario3</usuario>
 		<referenciaTreinamento>18</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
@@ -142,7 +142,7 @@
 	</mensagem>
 	<mensagem>
 		<numero>22</numero>
-		<texto>c deve ta cheio de hr sobreando né?</texto>
+		<texto>c deve ta cheio de hr sobrando né?</texto>
 		<usuario>Usuario1</usuario>
 	</mensagem>
 	<mensagem>
@@ -181,12 +181,12 @@
 	<mensagem>
 		<numero>29</numero>
 		<texto>vo pagar uma conta e ja volto</texto>
-		<usuario>Usuario2</usuario>
+		<usuario>Usuario4</usuario>
 	</mensagem>
 	<mensagem>
 		<numero>30</numero>
 		<texto>ta blza</texto>
-		<usuario>Usuario1</usuario>
+		<usuario>Usuario3</usuario>
 		<referenciaTreinamento>29</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
@@ -197,7 +197,7 @@
 	<mensagem>
 		<numero>32</numero>
 		<texto>qr tc?</texto>
-		<usuario>Usuario1</usuario>
+		<usuario>Usuario3</usuario>
 	</mensagem>
 	<mensagem>
 		<numero>33</numero>
@@ -217,7 +217,7 @@
 	<mensagem>
 		<numero>36</numero>
 		<texto>infelizmente venho</texto>
-		<usuario>Usuario2</usuario>
+		<usuario>Usuario3</usuario>
 		<referenciaTreinamento>34</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
@@ -233,7 +233,7 @@
 	<mensagem>
 		<numero>39</numero>
 		<texto>pow... quero ir pra barra agora ... seria melhor ... rs rs rs</texto>
-		<usuario>Usuario1</usuario>
+		<usuario>Usuario3</usuario>
 	</mensagem>
 	<mensagem>
 		<numero>40</numero>

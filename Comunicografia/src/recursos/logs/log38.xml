@@ -22,7 +22,7 @@
 	<mensagem>
 		<numero>4</numero>
 		<texto>aee ... feriadao ... :-D</texto>
-		<usuario>Usuario2</usuario>
+		<usuario>Usuario3</usuario>
 	</mensagem>
 	<mensagem>
 		<numero>5</numero>
@@ -34,7 +34,7 @@
 		<numero>6</numero>
 		<texto>q nada ... tenho q entregar a metade da dissertaco ate
 			domingo... vai ser teeeenso... mas vamo q vamo :-D</texto>
-		<usuario>Usuario2</usuario>
+		<usuario>Usuario3</usuario>
 		<referenciaTreinamento>5</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
@@ -64,7 +64,7 @@
 	<mensagem>
 		<numero>11</numero>
 		<texto>eu tb nunca fiz isso</texto>
-		<usuario>Usuario1</usuario>
+		<usuario>Usuario3</usuario>
 		<referenciaTreinamento>10</referenciaTreinamento>
 	</mensagem>
 	<mensagem>

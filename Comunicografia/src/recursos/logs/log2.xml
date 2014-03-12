@@ -20,4 +20,36 @@
 		<texto>q droga rs</texto>
 		<usuario>Usuario1</usuario>
 	</mensagem>
+	<mensagem>
+		<numero>4</numero>
+		<texto>putz, eu também ainda não fiz</texto>
+		<usuario>Usuario3</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>5</numero>
+		<texto>vamos fazer juntos?</texto>
+		<usuario>Usuario1</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>6</numero>
+		<texto>vamos, podem começar agora?</texto>
+		<usuario>Usuario3</usuario>
+		<referenciaTreinamento>5</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>7</numero>
+		<texto>será que ele não vai perceber que ta tudo igual?</texto>
+		<usuario>Usuario4</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>8</numero>
+		<texto>agente muda um pouco as respostas po</texto>
+		<usuario>Usuario1</usuario>
+		<referenciaTreinamento>7</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>9</numero>
+		<texto>nos vemos no skype entao</texto>
+		<usuario>Usuario2</usuario>
+	</mensagem>
 </discussao>

@@ -4,63 +4,63 @@
 	<data></data>
 	<mensagem>
 		<numero>1</numero>
-		<texto>faelaaa</texto>
-		<usuario>Bianca</usuario>
+		<texto>Usuario2</texto>
+		<usuario>Usuario1</usuario>
 		<tipo>cumprimento</tipo>
 	</mensagem>
 	<mensagem>
 		<numero>2</numero>
 		<texto>Oi amiga!</texto>
-		<usuario>Rafaela</usuario>
+		<usuario>Usuario2</usuario>
 		<tipo>cumprimento</tipo>
 		<referenciaTreinamento>1</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>3</numero>
 		<texto>td bom? Como está a vida?</texto>
-		<usuario>Bianca</usuario>
+		<usuario>Usuario1</usuario>
 		<tipo>pergunta</tipo>
 	</mensagem>
 	<mensagem>
 		<numero>4</numero>
 		<texto>sim e com vc?
 			ta indo amiga</texto>
-		<usuario>Rafaela</usuario>
+		<usuario>Usuario2</usuario>
 		<tipo>resposta</tipo>
 		<referenciaTreinamento>3</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>5</numero>
 		<texto>td blz. Naquele dia vc viu ql filme?</texto>
-		<usuario>Bianca</usuario>
+		<usuario>Usuario1</usuario>
 		<tipo>pergunta</tipo>
 		<referenciaTreinamento>4</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>6</numero>
 		<texto>Se eu fosse vc 2</texto>
-		<usuario>Rafaela</usuario>
+		<usuario>Usuario2</usuario>
 		<tipo>resposta</tipo>
 		<referenciaTreinamento>5</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>7</numero>
 		<texto>ainda nao vi esse até hoje. É mto bom né?</texto>
-		<usuario>Bianca</usuario>
+		<usuario>Usuario1</usuario>
 		<tipo>pergunta</tipo>
 		<referenciaTreinamento>6</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>8</numero>
 		<texto>Mto bom. Chorei de rir</texto>
-		<usuario>Rafaela</usuario>
+		<usuario>Usuario2</usuario>
 		<tipo>resposta</tipo>
 		<referenciaTreinamento>7</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>9</numero>
 		<texto>Eu chorei só de ver o trailer</texto>
-		<usuario>Bianca</usuario>
+		<usuario>Usuario1</usuario>
 		<referenciaTreinamento>8</referenciaTreinamento>
 	</mensagem>
 </discussao>

@@ -1,0 +1,1411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<discussao>
+	<titulo>greco</titulo>
+	<data></data>
+	<mensagem>
+		<numero>1</numero>
+		<texto>oi</texto>
+		<usuario>flavio</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>2</numero>
+		<texto>Boa noite</texto>
+		<usuario>bpereira</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>3</numero>
+		<texto>Olá</texto>
+		<usuario>bianca</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>4</numero>
+		<texto>Boa noite</texto>
+		<usuario>alan</usuario>
+		<referenciaTreinamento>2</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>5</numero>
+		<texto>Hoje vamos conversar sobre a reforma política e o que vocês gostariam que fosse mudado na constituição</texto>
+		<usuario>bianca</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>6</numero>
+		<texto>o voto distrital</texto>
+		<usuario>alan</usuario>
+	</mensagem>
+			<mensagem>
+		<numero>7</numero>
+		<texto>como o alan deu a ideia podemos começar pela proposta de voto distrital, o que vocês acham?</texto>
+		<usuario>bianca</usuario>
+		<referenciaTreinamento>6</referenciaTreinamento>
+	</mensagem>
+			<mensagem>
+		<numero>8</numero>
+		<texto>legal, eu não conhecia a proposta e a recomendação me ajudou</texto>
+		<usuario>bpereira</usuario>
+		<referenciaTreinamento>7</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>9</numero>
+		<texto>penso que os distritos com maior poder econômico iriam
+			simplesmente comprar o apoio dos outros...</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>7</referenciaTreinamento>
+	</mensagem>
+			<mensagem>
+		<numero>10</numero>
+		<texto>como funcionaria esse tipo de voto? Seria dividido por estados?</texto>
+		<usuario>thiago</usuario>
+		<referenciaTreinamento>7</referenciaTreinamento>
+	</mensagem>
+				<mensagem>
+		<numero>11</numero>
+		<texto>acho que a divisão seria por bairros</texto>
+		<usuario>beatriz</usuario>
+	</mensagem>
+				<mensagem>
+		<numero>12</numero>
+		<texto>eu acho que pela descrição do conceito os distritos podem ser divididos da maneira que os governantes acharem melhor</texto>
+		<usuario>bianca</usuario>
+		<referenciaTreinamento>10</referenciaTreinamento>
+	</mensagem>
+			<mensagem>
+		<numero>13</numero>
+		<texto>tenho dúvidas se essa divisão alteraria alguma coisa</texto>
+		<usuario>flavio</usuario>
+		<referenciaTreinamento>11</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>14</numero>
+		<texto>flavio, com a divisão por distritos talvez a população conhecesse melhor os parlamentares</texto>
+		<usuario>dudu</usuario>
+		<referenciaTreinamento>13</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>15</numero>
+		<texto>ainda não entendo muito bem como funcionaria esse voto</texto>
+		<usuario>lucia</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>16</numero>
+		<texto>o problema é que é difícil dar seu voto para uma pessoa que não
+			se conhece</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>15</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>17</numero>
+		<texto>E o que vocês acham do voto ser obrigatório?</texto>
+		<usuario>bianca</usuario>
+	</mensagem>
+			<mensagem>
+		<numero>18</numero>
+		<texto>oi Biaa!</texto>
+		<usuario>leoenes</usuario>
+	</mensagem>
+				<mensagem>
+		<numero>19</numero>
+		<texto>Boa noite leoenes</texto>
+		<usuario>bianca</usuario>
+				<referenciaTreinamento>18</referenciaTreinamento>
+		
+	</mensagem>
+		<mensagem>
+		<numero>20</numero>
+		<texto>o voto obrigatório só vigorará com sucesso quando uma sociedade
+			for suficientemente madura socialmente, ou seja, quando a educação e
+			saúde, por exemplo, estiverem difundidos pelo povo</texto>
+		<usuario>leoenes</usuario>
+		<referenciaTreinamento>17</referenciaTreinamento>
+		
+	</mensagem>
+		<mensagem>
+		<numero>21</numero>
+		<texto>dificultaria a democracia</texto>
+		<usuario>dudu</usuario>
+	</mensagem>
+			<mensagem>
+		<numero>22</numero>
+		<texto>Eu acho que se o voto não for obrigatório a venda de votos será favorecida</texto>
+		<usuario>diogo</usuario>
+		<referenciaTreinamento>20</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>23</numero>
+		<texto>concordo leoenes</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>20</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>24</numero>
+		<texto>o voto é a arma mais poderosa que temos para mudar alguma coisa
+			nesse país. </texto>
+		<usuario>beatriz</usuario>
+				<referenciaTreinamento>22</referenciaTreinamento>
+		
+	</mensagem>
+	<mensagem>
+		<numero>25</numero>
+		<texto>infelizmente, vota-se nas pessoas e os ideias são passados ao
+			largo. </texto>
+		<usuario>ines</usuario>
+	</mensagem>
+	
+				<mensagem>
+		<numero>26</numero>
+		<texto>a educação política vem na prática tb. podem me matar,mas sou a
+			favor ainda do voto obrigatório.</texto>
+		<usuario>ines</usuario>
+		<referenciaTreinamento>22</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>27</numero>
+		<texto>ines você vota nos objetivos dos partidos, mas penso que a
+			maioria das pessoa vota nos candidatos sem se importar com o partido
+		</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>26</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>28</numero>
+		<texto>o pior que estas pessoas são eleitas (efeito do voto
+			obrigatório) simplesmente em função de sua popularidade com a massa
+		</texto>
+		<usuario>tiagomarino</usuario>
+		<referenciaTreinamento>26</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>29</numero>
+		<texto>desculpe tiago, acho que isto independe se o voto é obrigatório
+			ou não.</texto>
+		<usuario>ines</usuario>
+		<referenciaTreinamento>28</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>30</numero>
+		<texto>voce acaba votando em uma bandeira
+		</texto>
+		<usuario>lucia</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>31</numero>
+		<texto>inês, o voto é uma "arma", para o bem ou para o mau. se a
+			pessoa não sabe usá-lo acaba favorecendo este tipo de gente. você
+			sabe quando o voto era em papel, um dos candidatos mais votados era o
+			"macaco tião" (mascote do jardim zoológico do rio). praticamente ele
+			era eleito o governador do rio toda eleição? naquela época as pessoas
+			faziam isso como uma forma de protesto. hoje elas votam no tiririca.
+			o pior que isso gera consequências.</texto>
+		<usuario>tiagomarino</usuario>
+		<referenciaTreinamento>29</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>32</numero>
+		<texto>você nunca vota numa bandeira</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>30</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>33</numero>
+		<texto>nolasco, você vota numa bandeira quando vota em branco ou
+			quando digita qualquer coisa e ainda favorece para alianças de
+			'gangues'</texto>
+		<usuario>diogo</usuario>
+		<referenciaTreinamento>32</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>34</numero>
+		<texto>nolasco, eu voto numa bandeira sim. feita de pessoas, mas numa
+			bandeira e no seu ideal e acho que esse é o caminho </texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>32</referenciaTreinamento>
+	</mensagem>
+				<mensagem>
+		<numero>35</numero>
+		<texto>esse problema de votar pela aparência do
+			candidato não acontece só no brasil, sou a favor do voto facultativo</texto>
+		<usuario>raphaela</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>36</numero>
+		<texto>também raphaela... isso faria com que somente pessoas
+			interessadas fossem votar</texto>
+		<usuario>diogo</usuario>
+				<referenciaTreinamento>35</referenciaTreinamento>
+		
+	</mensagem>
+		<mensagem>
+		<numero>37</numero>
+		<texto>o voto nos partidos poderia solucionar isso?</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>36</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>38</numero>
+		<texto>quando a compra de votos. obrigatório ou não, quem vende voto
+			ganha algo com isso então continuariam vendendo.</texto>
+		<usuario>bpereira</usuario>
+		<referenciaTreinamento>37</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>39</numero>
+		<texto>mas quem não quer entender é só não votar!</texto>
+		<usuario>nolasco</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>40</numero>
+		<texto>diogo qual o problema de só as pessoas interessadas votarem? se
+			o resto das pessoas não gostar das medidas passará a se interessar e
+			a votar também</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>36</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>41</numero>
+		<texto>a maioria vota em candidatos e não em partidos. a lei da ficha
+			limpa deveria ser colocada em pratica.</texto>
+		<usuario>beatriz</usuario>
+		<referenciaTreinamento>37</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>42</numero>
+		<texto>voces acham que com voto não obrigatório não haveria "compra"
+			de votos? eu discordo</texto>
+		<usuario>mluiza</usuario>
+		<referenciaTreinamento>38</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>43</numero>
+		<texto>testemunhei um caso de sucesso do "ficha limpa". no meu bairro
+			tem um indivíduo que conheço há bastante tempo que se candidatou a
+			deputado estadual nas última eleições. ele é um morador da comunidade
+			do chapéu mangueira, no bairro do leme. pessoalmente eu sei que ele
+			não é uma pessoa de boa índole mas por algumas manobras chegou a
+			conseguir se tornar líder comunitário nesta comunidade. pois
+			então...aproveitando esta popularidade na comunidade, se lançou
+			político nas últimas eleições. não tenho certeza se ele teve votos
+			suficientes para se eleger mas pelo que soube do desfecho é que ele
+			foi pego no "ficha limpa" e teve sua candidatura impugnada.</texto>
+		<usuario>tiagomarino</usuario>
+		<referenciaTreinamento>41</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>44</numero>
+		<texto>tambpem discordo mluiza. a questão do voto ser ou não
+			orbigatório não é essencial. acho até que o sistema atual tem suas
+			vantagens</texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>42</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>45</numero>
+		<texto>como vou saber se o candidato é honesto</texto>
+		<usuario>nolasco</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>46</numero>
+		<texto>só varrendo o histórico do candidato. isso se o histórico
+			estiver disponível...</texto>
+		<usuario>raphaela</usuario>
+		<referenciaTreinamento>45</referenciaTreinamento>
+	</mensagem>
+				<mensagem>
+		<numero>47</numero>
+		<texto>mas o fato de ele ter a ficha limpa não quer dizer que ele é
+			honesto ou confiável</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>45</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>48</numero>
+		<texto>ficha limpa serve pra isso. </texto>
+		<usuario>beatriz</usuario>
+		<referenciaTreinamento>47</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>49</numero>
+		<texto>só quer dizer que ele não é bandido</texto>
+		<usuario>nolasco</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>50</numero>
+		<texto>digo mais nolasco, tem político honesto que é difamado e
+			processado injustamente por interesses políticos. é difícil saber
+			mesmo a verdade. </texto>
+		<usuario>ines</usuario>
+		<referenciaTreinamento>49</referenciaTreinamento>
+	</mensagem>
+
+	<mensagem>
+		<numero>52</numero>
+		<texto>oi gente, boa noite!</texto>
+		<usuario>alfredo</usuario>
+	</mensagem>
+					<mensagem>
+		<numero>53</numero>
+		<texto>se ele for honesto ele é confiável sim.</texto>
+		<usuario>beatriz</usuario>
+		<referenciaTreinamento>47</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>54</numero>
+		<texto>boa noite, alfredo</texto>
+		<usuario>bianca</usuario>
+		<referenciaTreinamento>52</referenciaTreinamento>
+	</mensagem>
+				<mensagem>
+		<numero>55</numero>
+		<texto>o problema é que é difícil dar seu voto para uma pessoa que não
+			se conhece</texto>
+		<usuario>nolasco</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>56</numero>
+		<texto>acho que só os políticos tem a ganhar agora com o voto
+			facultativo.</texto>
+		<usuario>ines</usuario>
+				<referenciaTreinamento>55</referenciaTreinamento>
+		
+	</mensagem>
+			<mensagem>
+		<numero>57</numero>
+		<texto>acho que talvez com o plebiscito para a reforma poderíamos
+			votar nessas propostas de emenda a constituição</texto>
+		<usuario>bianca</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>58</numero>
+		<texto>mas ainda sim sim bianca, uma reforma produnda temq que ter
+			corpo, tem que ser pensada no sentido global. por isso acho muito
+			importante a atuação de certos movimentos sociais e partidos de
+			esquerda que colocam um debate ideologico</texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>57</referenciaTreinamento>
+	</mensagem>
+			<mensagem>
+		<numero>59</numero>
+		<texto>o relatório resultante do debate no e-democracia, tem pontos
+			interessantes, justificando ou dando a base de cada questão
+			apresentada: voto distrital, coligações, e outros.</texto>
+		<usuario>mluiza</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>60</numero>
+		<texto>acredito que um plebiscito com voto não obrigatório nos temas
+			principais seria melhor do que deixar a reforma nas mãos dos
+			interesses dos políticos</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>57</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>61</numero>
+		<texto>numa postagem no e-democracia, geraldo azevedo siqueira colocou
+			que:
+			a constituição de 1891 marcou o fim dos privilégios políticos, a
+			constituição inaugural com a reforma de 1934, verão que ela supera em
+			muito nossa atual constituição, principalmente em matéria política.
+			as constituições posteriores, desfiguraram a república original e
+			restauraram os privilégios. ele sugere que o brasil precisaria
+			desconstruir 76 anos de atraso político, e reencontrar sua
+			identidade, para então seguir seu destino. nos últimos 76 anos vimos
+			a aparelhamento do estado no interesse dos partidos políticos, dos
+			próprios políticos e de toda a gente que vive de impostos. isto se
+			comprova pela quantidade de privilégios que foram reinstituídos nas
+			constituições a partir de 1937.
+</texto>
+		<usuario>ines</usuario>
+		<referenciaTreinamento>59</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>62</numero>
+		<texto>o problema no plebiscito é que o voto é obrigatório, logo pode
+			haver o mesmo problema das eleições, como compra de voto. também, sou
+			a favor do voto facultativo</texto>
+		<usuario>raphaela</usuario>
+		<referenciaTreinamento>60</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>63</numero>
+		<texto>a única ferramenta que temos para regular o comportamento dos
+			políticos hoje são as leis, concordo que com o plebiscito poderíamos
+			ter participação e quiça apertar mais o cinto dos políticos...
+		</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>62</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>64</numero>
+		<texto>acho que essa é a ideia do plebiscito ver a real opinião das
+			pessoas, não opiniões compradas</texto>
+		<usuario>raphaela</usuario>
+		<referenciaTreinamento>63</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>65</numero>
+		<texto>nolasco, pelbiscito é muito bom, mas não pra todos os casos. em
+			especial, quando se trata de direito de minorias. por exemplo, hoje,
+			um pelbiscito proibiria o casamento homossexual</texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>63</referenciaTreinamento>
+	</mensagem>
+			<mensagem>
+		<numero>66</numero>
+		<texto>plebiscito é para coisa pontual...não espere que a população
+			voto consciente sem entender do que se trata o plebiscito...não estou
+			falando só de classe baixa, ok?</texto>
+		<usuario>angelica</usuario>
+		<referenciaTreinamento>65</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>67</numero>
+		<texto>não dá pra acreditar no plebiscito enquanto não houver uma
+			reforma das midias também</texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>66</referenciaTreinamento>
+	</mensagem>
+				<mensagem>
+		<numero>68</numero>
+		<texto>o poder delas é muito grande e não há qualquer controle social
+			sobre elas </texto>
+		<usuario>thiago_souza</usuario>
+	</mensagem>	
+		<mensagem>
+		<numero>69</numero>
+		<texto>thiago como você acha que um sistema por voto majoritária irá
+			satisfazer as minorias?</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>67</referenciaTreinamento>
+	</mensagem>
+			<mensagem>
+		<numero>70</numero>
+		<texto>controlar a mídia é polêmico... ela exerce o qurto poder e está
+			acima dos outros três, como fazer?</texto>
+		<usuario>alfredo</usuario>
+		<referenciaTreinamento>67</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>71</numero>
+		<texto>uma mudança de cultura pode acontecer. acho que temos muitos
+			mecanismos de envolvimento hoje</texto>
+		<usuario>mluiza</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>72</numero>
+		<texto>a imaturidade ainda é muito grande nesse país. </texto>
+		<usuario>alfredo</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>73</numero>
+		<texto>thiago você disse que um plebiscito é prejudicial para as
+			minorias, eleição por voto majoritária é bom para as minorias?
+		</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>68</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>74</numero>
+		<texto>alfredo, imaturiidade é uma coisas que não existe em politica.
+			existe falata de organização e de consciencia, mas imaturidade não
+		</texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>72</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>75</numero>
+		<texto>só disse que um plebiscito pode ser muito ruim para questões de
+			minoria</texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>73</referenciaTreinamento>
+	</mensagem>
+			<mensagem>
+		<numero>76</numero>
+		<texto>oi tiago, sem problema.</texto>
+		<usuario>alfredo</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>77</numero>
+		<texto>acho que nosso desconhecimento em política, sobre a proposta
+			dos partidos e legislação é um sintoma de que precisamos mudar na
+			raiz. as discussões se dão em ponto pequeno e sem continuidade,
+			envolvendo apenas os diretamente interessados nao temos a cultura da
+			participação. </texto>
+		<usuario>mluiza</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>78</numero>
+		<texto>claro que a ignorancia atrapalha, mas nem todo iletrado é um
+			analfabeto politico. a classe media é que vive achando que saber o
+			que é bom e o que não é</texto>
+		<usuario>thiago_souza</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>79</numero>
+		<texto>o país só muda com a participação direta da sociedade. </texto>
+		<usuario>beatriz</usuario>
+	</mensagem>
+<mensagem>
+		<numero>80</numero>
+		<texto>o problema das leis é a cultura de não cumprí-las. o famoso
+			"jeitinho brasileiro" que está aí pra tudo.</texto>
+		<usuario>bpereira</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>81</numero>
+		<texto>que diga seu cesar maia e garotinho</texto>
+		<usuario>leoenes</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>82</numero>
+		<texto>vejam que voltamos sempre ao ponto de "criar regras" mas não
+			acho que este seja nosso maior problema: precisamos de mecanismso
+			efetivos para que se cumpram as muitas regras que temos</texto>
+		<usuario>mluiza</usuario>
+		<referenciaTreinamento>80</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>83</numero>
+		<texto>concordo com a mluiza, o que estamos tentando fazer é criar
+			regras que não tenham nenhuma brecha para os aproveitadores, e já
+			fazemos isso há algum tempo, será que é a solução?</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>82</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>84</numero>
+		<texto>também acho que a participação no pais precisa aumentar e muito</texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>79</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>85</numero>
+		<texto>thiago, veja quem foram (e quantas foram) as pessoas que
+			participaram das mobilizações em 2013. </texto>
+		<usuario>alfredo</usuario>
+		<referenciaTreinamento>84</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>86</numero>
+		<texto>foram muitas e bem diversificadas alfredo. faltou organização
+			politica, mas decadas de desmobilização tem seus efeitos negativos
+		</texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>85</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>87</numero>
+		<texto>o banlanço entre os poderes é outro problema. acho que no brasl
+			o legislativo é inútil e o executivo muito inchado</texto>
+		<usuario>thiago_souza</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>88</numero>
+		<texto>não entendi</texto>
+		<usuario>bianca</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>89</numero>
+		<texto>por exemplo, o orçamento, hoje, na prática, não está nas mãos
+			do legislativo</texto>
+		<usuario>thiago_souza</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>90</numero>
+		<texto>concordo thiago</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>89</referenciaTreinamento>
+	</mensagem>	
+		<mensagem>
+		<numero>91</numero>
+		<texto>thiago é verdade. mais é conveniente não estar nas mãos deles,
+			pois eles teriam muito trabalho...</texto>
+		<usuario>angelica</usuario>
+		<referenciaTreinamento>89</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>92</numero>
+		<texto>o problema, angelica, é que o legislativo tem um caráter
+			essencialmente mais democratico que o executivo. acho que um
+			legislativo forte, aliado a formas de escolha direta da população,
+			inclusive plebescitos, podem ser muito interessantes</texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>91</referenciaTreinamento>
+	</mensagem>
+				<mensagem>
+		<numero>93</numero>
+		<texto>o legislativo deveria tomar as rédeas dos projetos de longo
+			prazo e deixar o executivo cuidando só dos problemas do dia-a-dia...
+		</texto>
+		<usuario>angelica</usuario>
+		<referenciaTreinamento>92</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>94</numero>
+		<texto>concordo angelica. acho que educação, por exemplo, é uma tipica
+			área que é melhor gerida pelo legislativo.</texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>93</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>95</numero>
+		<texto>como o legislativo iria gerir algo, seu papel não é criar leis?
+		</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>94</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>96</numero>
+		<texto>infelizmente, no brasil, o legislativo é feito de ruralista e
+			pela bancada evangélica, tão ruim, que não dá nem pra defender uma
+			constituinte, já que o provável, é que os constituintes iriam
+			regredir o carater democratico</texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>95</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>97</numero>
+		<texto>o legislativo deveria tomar as rédias, ou seja controlar o
+			rumo....</texto>
+		<usuario>angelica</usuario>
+		<referenciaTreinamento>96</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>98</numero>
+		<texto>somos uma nação rural...a maior parte do pib vem do campo...
+		</texto>
+		<usuario>angelica</usuario>
+		<referenciaTreinamento>96</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>99</numero>
+		<texto>pessoal, sei que temos que ter liberdade, mas 32 partidos
+			políticos é muito para qq brasileiro. pra entender os objetivos de
+			cada um é difícil.</texto>
+		<usuario>ines</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>100</numero>
+		<texto>tenho minhas dúvidas em considerar somente ruralistas e bancada
+			evangélica.</texto>
+		<usuario>bnascimento</usuario>
+		<referenciaTreinamento>96</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>101</numero>
+		<texto>32 é absurdo... ngm entende nada</texto>
+		<usuario>leoenes</usuario>
+		<referenciaTreinamento>99</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>102</numero>
+		<texto>então, não só o mecanismo de escolha do executivo é totalmente
+			tosoco, porque as coligações são de 20 partidos, mas também não
+			sabemos que estamos escolhendo para o legislativo </texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>97</referenciaTreinamento>
+	</mensagem>
+<mensagem>
+		<numero>103</numero>
+		<texto>o executivo, sempre tende a priorizar as politicas de curto
+			prazo, porque não existe um legsllativo eficiente comprometido com o
+			longo prazo. </texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>97</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>104</numero>
+		<texto>com a reforma poderíamos eliminar leis antigas que não fazem mais sentido. Principalmente as da época da ditadura</texto>
+		<usuario>nolasco</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>105</numero>
+		<texto>verdade nolasco, podemos eliminar o que não queremos </texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>104</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>106</numero>
+		<texto>todas os dados das contas do governo deveriam estar abertos,
+			alguém sabe a situação hoje?</texto>
+		<usuario>nolasco</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>107</numero>
+		<texto>acho que eles estão caminhando com o portal da transparência</texto>
+		<usuario>bianca</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>108</numero>
+		<texto>o proprio pessoal de ti do congresso nacional tem feito um bom
+			trabalho</texto>
+		<usuario>mluiza</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>109</numero>
+		<texto>pessoal, só lembrando a quem entrou agora, passando o mouse em
+			cima das palavras do lado esquerdo vocês conseguem ver as
+			recomendações</texto>
+		<usuario>bianca</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>110</numero>
+		<texto>a abertura de dados vai contribuir para coibir muitos excessos.
+			eu acredito que temos muito força para mudar, apenas nao nos
+			envolvemos os suficiente, em todas as instancias onde temos
+			representatividade</texto>
+		<usuario>mluiza</usuario>
+		<referenciaTreinamento>106</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>111</numero>
+		<texto>outra coisa é a banalização dos políticos pulando de partido em
+			partido!</texto>
+		<usuario>leoenes</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>112</numero>
+		<texto>mas os partidos obedecem uma lei rígida para criação, vide o da
+			marina silva que não conseguiu sair do papel</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>111</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>113</numero>
+		<texto>o maior problema é o pouco caso que os políticos fazem com
+			qualquer coisa que dure mais de 4 anos ou quando estão no final do
+			seu mandato</texto>
+		<usuario>diogo</usuario>
+		<referenciaTreinamento>111</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>114</numero>
+		<texto>como eu tinha falado, o problema é a quantidade de partidos que existe hoje também</texto>
+		<usuario>ines</usuario>
+		<referenciaTreinamento>112</referenciaTreinamento>
+	</mensagem>
+			<mensagem>
+		<numero>115</numero>
+		<texto>ines, acho que por isso foi votada uma pec para desfiliação
+			partidária</texto>
+		<usuario>bianca</usuario>
+		<referenciaTreinamento>114</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>116</numero>
+		<texto>a questão é essa mesma bianca, garantir um minimo de coerencia
+			com o que foi proposto quando da criação do partido</texto>
+		<usuario>mluiza</usuario>
+		<referenciaTreinamento>115</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>117</numero>
+		<texto>criar cláusulas mais rígidas não só para criação, mas para a
+			manutenção do partido é um começo</texto>
+		<usuario>dudu</usuario>
+		<referenciaTreinamento>112</referenciaTreinamento>
+	</mensagem>
+			<mensagem>
+		<numero>118</numero>
+		<texto>com relação a isso também existe uma PEC que propoe que o financiamento de campanhas seja exclusivamente público</texto>
+		<usuario>bianca</usuario>
+	</mensagem>
+	<mensagem>
+			<numero>119</numero>
+		<texto>sou a favor da lei da ficha limpa. vocês acham que o
+			financiamaneto exlusivamente público das campanhas tiraria a
+			influência econômica das eleições. hoje ganha eleição quem tem mais
+			dinheiro...</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>118</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>120</numero>
+		<texto>vi um estudo americano que adivinhava os vencedores das
+			disputas eleitorais analisando o rosto dos candidatos, o marketing
+			que vence as campanhas!</texto>
+		<usuario>nolasco</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>121</numero>
+		<texto>os partidecos de aluguél gazem aliança o tempo todo pra
+			aumentar o tempo de tv de partidos grandes e bargnhar com isso
+		</texto>
+		<usuario>thiago_souza</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>122</numero>
+		<texto>E será que com a questão do financiamento acabariamos com os partidos de aluguel?
+		</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>121</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>123</numero>
+		<texto>não, mas acho que proibir coligações já é um duro golpe nos
+			partidos de aluguél nolasco</texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>122</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>124</numero>
+		<texto>é, a imprensa apoia quem paga mais...</texto>
+		<usuario>alfredo</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>125</numero>
+		<texto>será que as propostas de reforma vão realmente incluir todas as essas propostas? Alguém sabe?</texto>
+		<usuario>alfredo</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>126</numero>
+		<texto>temos algumas propostas, foi criado um grupo de trabalho da
+			câmara dos deputados que está definindo algumas pecs e projetos de
+			lei</texto>
+		<usuario>bianca</usuario>
+		<referenciaTreinamento>125</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>127</numero>
+		<texto>é nesta linha o que vem sendo proposto no rela'torio da
+			reforma, alfredo</texto>
+		<usuario>mluiza</usuario>
+		<referenciaTreinamento>125</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>128</numero>
+		<texto>obrigado mluiza, vou dar uma olhada</texto>
+		<usuario>thiago_souza</usuario>
+				<referenciaTreinamento>127</referenciaTreinamento>
+		
+	</mensagem>
+		<mensagem>
+		<numero>129</numero>
+		<texto>também gostei da proposta do psol</texto>
+		<usuario>bianca</usuario>
+		<referenciaTreinamento>127</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>130</numero>
+		<texto>qual é a proposta do psol</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>129</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>131</numero>
+		<texto>mas sabemos que isto é praticamente impossível uma vez que uma
+			proposta dessas sempre passará pelo crivo destes indivíduos</texto>
+		<usuario>tiagomarino</usuario>
+		<referenciaTreinamento>130</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>132</numero>
+		<texto>ela é extensa nolasco, mas tem vários pontos que passamos aqui.
+			financiamento exclusivamente público de campanha, proibição de
+			coligações </texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>130</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>133</numero>
+		<texto>acho que com as manifestações poderíamos conseguir algumas mudanças. O ruim foi não ter propostas muito definidas</texto>
+		<usuario>bianca</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>134</numero>
+		<texto>penso que manifestação não exige propostas, apenas é uma
+			"manifestação" de que estamos insatisfeitos quem tem que apresentar
+			alternativas são os políticos , esse é o trabalho deles</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>133</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>135</numero>
+		<texto>hum, mesmo? nao vi continuidade nem propostas...</texto>
+		<usuario>mluiza</usuario>
+		<referenciaTreinamento>134</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>136</numero>
+		<texto>cf 1934</texto>
+		<usuario>mluiza</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>137</numero>
+		<texto>antonio brito</texto>
+		<usuario>mluiza</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>138</numero>
+		<texto>em letra maiuscula é mais facil reconhecer, antônio brito
+		</texto>
+		<usuario>bianca</usuario>
+		<referenciaTreinamento>137</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>139</numero>
+		<texto>(desculpa, pessoal, estava fazendo uns testes)</texto>
+		<usuario>mluiza</usuario>
+	</mensagem>
+			<mensagem>
+		<numero>140</numero>
+		<texto>o que voces acham, por exemplo, do programa do bolsa família?</texto>
+		<usuario>bianca</usuario>
+	</mensagem>
+				<mensagem>
+		<numero>141</numero>
+		<texto>acho que o bolsa família foi uma das coisas mais importantes
+			que aconteceram no brasil nos últimos anos. tornou visíveis cerca de
+			50 milhões de pessoas, tornou-os mais cidadãos. essa talvez seja a
+			maior conquista</texto>
+		<usuario>flavio</usuario>
+		<referenciaTreinamento>140</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>142</numero>
+		<texto>acredito que deveria se ter uma compensação para o tempo que se
+			dedica no governo sim, não sou a favor de não ganharem nada</texto>
+		<usuario>nolasco</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>143</numero>
+		<texto>nolasco, o bolsa família acaba fazendo com que as pessoas
+			prefiram não trabalhar</texto>
+		<usuario>bianca</usuario>
+		<referenciaTreinamento>142</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>144</numero>
+		<texto>o rpograma tem sido desvirtuado por argumentos preconceituosos
+			e não embasados em estatsíticas. o certo, é que ele ajudou a superar
+			a grave seca dos últimos anos</texto>
+		<usuario>thiago_souza</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>145</numero>
+		<texto>para min o programa acaba criando o voto de cabresto</texto>
+		<usuario>dudu</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>146</numero>
+		<texto>dudu. o bolsa pode até criar voto de cabreto em alguns lugares,
+			mas não é relevante isso - que aliás já iria acontecer de qualquer
+			forma - tanto que a nova classe média não é petista</texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>145</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>147</numero>
+		<texto>o bolsa familía pode tentar dar uma vida mais digana a uma
+			parcela importante da populção que gera muita pressão social e teria
+			pouquissima chance de se inserir no processo produtivo, porque o
+			desemprego é estrutural no sistema </texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>143</referenciaTreinamento>
+	</mensagem>
+			<mensagem>
+		<numero>148</numero>
+		<texto>mas ele deveria ser um programa temporário</texto>
+		<usuario>bianca</usuario>
+		<referenciaTreinamento>145</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>149</numero>
+		<texto>a questão não é essa</texto>
+		<usuario>alan</usuario>
+</mensagem>
+	<mensagem>
+		<numero>150</numero>
+		<texto>eu acho que a retirada do benefício acaba fazendo com que as famílias não consigam se manter novamente</texto>
+		<usuario>bpereira</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>151</numero>
+		<texto>bpereira quando uma pessoa consegue renda suficiente para
+			manter sua família, retirar r$ 152 não vai fazê-la ficar pobre
+			novamente. apesar de acreditar que irá demorar geraçôes</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>150</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>152</numero>
+		<texto>mais sem a base da eduação não tem como escalar o conhecimento
+		</texto>
+		<usuario>leoenes</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>153</numero>
+		<texto>certamente esse cenário seria menos danoso do que é hoje.
+		</texto>
+		<usuario>leoenes</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>154</numero>
+		<texto>é o tipo de investimento que não dá retorno em 4 anos</texto>
+		<usuario>thiago_souza</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>155</numero>
+		<texto>leonoes..que educação? educação de mercado não é a questão.
+			sabemos muito bem que pessoas altamente escolarizadas podem ser
+			avessas a politica. a educação politica não se aprende
+			necessariamente na escola </texto>
+			
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>152</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>156</numero>
+		<texto>é uma coisa acaba puxando a outra</texto>
+		<usuario>leoenes</usuario>
+</mensagem>
+	<mensagem>
+		<numero>157</numero>
+		<texto>eu acho que não vai acabar nunca o programa</texto>
+		<usuario>bianca</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>158</numero>
+		<texto>acho que devia ter algo a mais em troca ao invés de mandar o
+			filho para uma escola que naturalmente é ruim</texto>
+		<usuario>diogo</usuario>
+		<referenciaTreinamento>155</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>159</numero>
+		<texto>deveria ter investimento em todas as áreas básicas de longo prazo...segurança, projetos de
+			infraestrutura etc..</texto>
+		<usuario>angelica</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>160</numero>
+		<texto>absurdo os salários que estes indivíduos recebem! a reforma
+			deveria começar por aí!</texto>
+		<usuario>tiagomarino</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>161</numero>
+		<texto>não sei não. tive diversos professores extremamente
+			inteligentes, mas que em termos politicos só faltavam relinchar
+		</texto>
+		<usuario>thiago_souza</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>162</numero>
+		<texto>concordo leoenes</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>156</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>163</numero>
+		<texto>não que a puniçaõ tenha que ser abandonada, mas os males -
+			corrupção, etc - não são escoolhas individuais, são um projeto de
+			poder. por exmplo, a alston e ganhou muito com a corrupção de
+			politocs do psdb</texto>
+		<usuario>thiago_souza</usuario>
+	</mensagem>
+			<mensagem>
+		<numero>164</numero>
+		<texto>não sabia disso thiago</texto>
+		<usuario>roma</usuario>
+				<referenciaTreinamento>163</referenciaTreinamento>
+		
+	</mensagem>
+				<mensagem>
+		<numero>165</numero>
+		<texto>também temos o problema da população que não entende o funcionamento dos parlamentares e não sabem votar</texto>
+		<usuario>dudu</usuario>
+		
+	</mensagem>
+					<mensagem>
+		<numero>166</numero>
+		<texto>o que você quis dizer com isso dudu?</texto>
+		<usuario>roma</usuario>
+		
+	</mensagem>
+	<mensagem>
+		<numero>167</numero>
+		<texto>acredito que ele se refere a pessoas que não sabem o que um
+			vereador faz serem obrigadas a votar em um</texto>
+		<usuario>nolasco</usuario>
+	</mensagem>
+			<mensagem>
+		<numero>168</numero>
+		<texto>eu não consigo distinguir as bandeiras do pt psdb e dem por
+			exemplo, acredito que são bandeiras fictícias</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>163</referenciaTreinamento>
+	</mensagem>
+<mensagem>
+		<numero>169</numero>
+		<texto>igualar as bandeiras pt = psdb é a mesma coisa que dizer que
+			nosso país permaneceu igual de 94-2002 para 2003-atualmente</texto>
+		<usuario>dudu</usuario>
+		<referenciaTreinamento>168</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>170</numero>
+		<texto>sim dudu, a maioria, na verdade, os que não são são em geram
+			pequenos partidos de esquerda tipo pco, </texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>169</referenciaTreinamento>
+	</mensagem>
+			<mensagem>
+		<numero>171</numero>
+		<texto>Será que não conseguiriamos seguir sem partidos, a população votaria nos ideais dos politicos</texto>
+		<usuario>bnascimento</usuario>
+	</mensagem>	
+			<mensagem>
+		<numero>172</numero>
+		<texto>realmente bnascimento, não dava para ficar sem partido? vejo
+			esses partidos, muitas vezes, como gangues</texto>
+		<usuario>diogo</usuario>
+		<referenciaTreinamento>171</referenciaTreinamento>
+	</mensagem>	
+	<mensagem>
+		<numero>173</numero>
+		<texto>muitos se candidatam simplesmente para tirar proveito das
+			absurdas regalias do governo para estes indivíduos que não sabem nem
+			porque e para que estão lá. vide tiririca, lacraia, palhaço
+			pipoca,...</texto>
+		<usuario>tiagomarino</usuario>
+	</mensagem>
+
+	<mensagem>
+		<numero>174</numero>
+		<texto>é mesmo diogo, uma prova disso é o número de candidatos
+			"artistas" que vêm sendo eleitos</texto>
+		<usuario>raphaela</usuario>
+		<referenciaTreinamento>172</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>175</numero>
+		<texto>concordo diogo, por isso os países fazem leis sem fim desde que
+			a democracia foi inventada</texto>
+		<usuario>nolasco</usuario>
+		<referenciaTreinamento>172</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>176</numero>
+		<texto>nolssco, bom ponto. talvez o foco tenha que ser mudado então.
+			vamos nos concentrar em aprofundar o debate e a democracia direta
+		</texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>175</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>177</numero>
+		<texto>a pec 71 unifica as eleições nacionais e municipais</texto>
+		<usuario>bianca</usuario>
+		<referenciaTreinamento>173</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>178</numero>
+		<texto>então a pec 71 iria impedir que um político que se candidatasse
+			para algo mudasse de cargo daqui a 2 anos... isso parece bom</texto>
+		<usuario>diogo</usuario>
+		<referenciaTreinamento>177</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>179</numero>
+		<texto>qualquer pessoa tem o direito de se candidatar. seja quem for.
+			a consciência politica começa com o eleitor, ele deverá escolher em
+			quem votar. </texto>
+		<usuario>beatriz</usuario>
+		<referenciaTreinamento>178</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>180</numero>
+		<texto>mas nao teriamos ideiais em comum a seguir, bandeiras
+			filosoficas que representassem a maioria do povo</texto>
+		<usuario>dudu</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>181</numero>
+		<texto>e temos massa crítica politizada o suficiente para mobilizações
+			de monta? acho que não...</texto>
+		<usuario>alfredo</usuario>
+	</mensagem>
+	<mensagem>
+			<numero>182</numero>
+		<texto>não entendi alfredo</texto>
+		<usuario>bianca</usuario>
+		<referenciaTreinamento>181</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>183</numero>
+		<texto>e educação política se dá nas escolas, nas residências ... como
+			fazer?</texto>
+		<usuario>angelica</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>184</numero>
+		<texto>eu acho que a proibição de coligações em eleições proporcionais
+			uma medida essêncial. quando a coisa é majoriária, a aliança tende a
+			ser programática </texto>
+		<usuario>thiago_souza</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>185</numero>
+		<texto>thiago_souza, concordo com a colocação, mas talvez seja
+			importante para entendermos o cenário atual</texto>
+		<usuario>diogo</usuario>
+		<referenciaTreinamento>184</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>186</numero>
+		<texto>e regular que as coligações sejam duradouras, para diminuir o
+			portunismo</texto>
+		<usuario>mluiza</usuario>
+		<referenciaTreinamento>184</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>187</numero>
+		<texto>mas se você coloca uma barreira em algo é natural que as
+			pessoas queiram quebrá-la</texto>
+		<usuario>diogo</usuario>
+		<referenciaTreinamento>186</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>188</numero>
+		<texto>pode ser sim, uma vez que se colque em discussão um projeto
+			policto. ser majoritaria não significa que sso vai atender a
+			um grupo. é só uma questão de como se distribuirão as vagas </texto>
+		<usuario>thiago_souza</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>189</numero>
+		<texto>o problema da clausula de barreira, é que ela pode favorecer os
+			partidos sem rosto tipo o pmdb</texto>
+		<usuario>thiago_souza</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>190</numero>
+		<texto>as democracias europeias passaram pelo mesmo processo longo que
+			nos passamos</texto>
+		<usuario>thiago_souza</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>191</numero>
+		<texto>pessoal, acho que já podemos encerrar o chat. gostaria muito de
+			saber o que vocês acharam do chat bem como as recomendações, críticas
+			e sugestões</texto>
+		<usuario>bianca</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>192</numero>
+		<texto>gostei muito pessoal! acredito que no futuro a tecnologia nos
+			possibilitará exercer a democracia direta? que afinal seria a
+			democracia "original". vou responder o questionário! abraços</texto>
+		<usuario>nolasco</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>193</numero>
+		<texto>sempre haverá espaço para discussão e mobilização. revolta e
+			insubordinação é coisa do passado. hoje vivemos em pleno estado
+			democrático. isso é coisa do pig</texto>
+		<usuario>beatriz</usuario>
+		<referenciaTreinamento>192</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>194</numero>
+		<texto>o que é pig beatriz?</texto>
+		<usuario>bianca</usuario>
+		<referenciaTreinamento>193</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>195</numero>
+		<texto>partido da imprensa golpista. </texto>
+		<usuario>beatriz</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>196</numero>
+		<texto>não entendi beatriz?</texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>195</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>197</numero>
+		<texto>beatriz quem vive o pelno estado democratico de direito? nós,
+			ou o amarildo?</texto>
+		<usuario>thiago_souza</usuario>
+		<referenciaTreinamento>193</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>198</numero>
+		<texto>isso é verdade thiago</texto>
+		<usuario>leoenes</usuario>
+		<referenciaTreinamento>197</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>199</numero>
+		<texto>pessoal tenho que ir </texto>
+		<usuario>thiago_souza</usuario>
+	</mensagem>
+	<mensagem>
+		<numero>200</numero>
+		<texto>abraços</texto>
+		<usuario>thiago_souza</usuario>
+	</mensagem>
+		<mensagem>
+		<numero>201</numero>
+		<texto>O questionario para avaliação está nesse link</texto>
+		<usuario>bianca</usuario>
+	</mensagem>
+			<mensagem>
+		<numero>202</numero>
+		<texto>o link não está funcionando bianca</texto>
+		<usuario>mluiza</usuario>
+		<referenciaTreinamento>201</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>203</numero>
+		<texto>aqui funciona clicando</texto>
+		<usuario>bianca</usuario>
+		<referenciaTreinamento>202</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>204</numero>
+		<texto>copia o link e cola no navegador que vai</texto>
+		<usuario>tiagomarino</usuario>
+		<referenciaTreinamento>202</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>205</numero>
+		<texto>o 1º link não está funcionando</texto>
+		<usuario>raphaela</usuario>
+		<referenciaTreinamento>204</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>206</numero>
+		<texto>sim, clicando no final, funciona!</texto>
+		<usuario>mluiza</usuario>
+		<referenciaTreinamento>203</referenciaTreinamento>
+	</mensagem>
+	<mensagem>
+		<numero>207</numero>
+		<texto>pessoal! muito obrigada pela ajuda e participação! peço que não
+			deixem de dar usa opiniao e sugestoes no questionario </texto>
+		<usuario>mluiza</usuario>
+		<referenciaTreinamento>201</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>208</numero>
+		<texto>obrigado pessoal, foi ótima a discussão</texto>
+		<usuario>bianca</usuario>
+		<referenciaTreinamento>207</referenciaTreinamento>
+	</mensagem>
+			<mensagem>
+		<numero>209</numero>
+		<texto>boa noite!</texto>
+		<usuario>alfredo</usuario>
+	</mensagem>
+				<mensagem>
+		<numero>210</numero>
+		<texto>boa noite a todos</texto>
+		<usuario>bianca</usuario>
+	</mensagem>
+					<mensagem>
+		<numero>211</numero>
+		<texto>boa noite pessoal</texto>
+		<usuario>dudu</usuario>
+	</mensagem>
+</discussao>

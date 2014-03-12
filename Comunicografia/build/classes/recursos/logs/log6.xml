@@ -4,7 +4,7 @@
 	<data></data>
 	<mensagem>
 		<numero>1</numero>
-		<texto>oi menina</texto>
+		<texto>oi Usuario2</texto>
 		<usuario>Usuario1</usuario>
 		<tipo>cumprimento</tipo>
 	</mensagem>
@@ -22,14 +22,14 @@
 	</mensagem>
 	<mensagem>
 		<numero>4</numero>
-		<texto>qr dizer q vms comemorar hj?</texto>
-		<usuario>Usuario1</usuario>
+		<texto>pessoal, qr dizer q vms comemorar hj?</texto>
+		<usuario>Usuario3</usuario>
 		<tipo>pergunta</tipo>
 	</mensagem>
 	<mensagem>
 		<numero>5</numero>
-		<texto>pois eh.. falei com o fulano pra te chamar.</texto>
-		<usuario>Usuario2</usuario>
+		<texto>pois eh.. falei com o thiago pra te chamar.</texto>
+		<usuario>Usuario1</usuario>
 		<tipo>resposta</tipo>
 		<referenciaTreinamento>4</referenciaTreinamento>
 	</mensagem>
@@ -37,7 +37,7 @@
 		<numero>6</numero>
 		<texto> ele flw aki pra gente ^^
 			espero q isso seja bom msm hehehehe</texto>
-		<usuario>Usuario1</usuario>
+		<usuario>Usuario3</usuario>
 		<referenciaTreinamento>5</referenciaTreinamento>
 	</mensagem>
 	<mensagem>

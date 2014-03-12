@@ -5,33 +5,45 @@
 	<mensagem>
 		<numero>1</numero>
 		<texto>Bem vindo.</texto>
-		<usuario>equipe e-democracia</usuario>
+		<usuario>Usuario1</usuario>
 	</mensagem>
 	<mensagem>
 		<numero>2</numero>
 		<texto>OBRIGADO</texto>
-		<usuario>felipe</usuario>
+		<usuario>Usuario2</usuario>
 		<referenciaTreinamento>1</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>3</numero>
 		<texto>Acompanha-nos de onde?</texto>
-		<usuario>equipe e-democracia</usuario>
+		<usuario>Usuario1</usuario>
 	</mensagem>
 	<mensagem>
 		<numero>4</numero>
-		<texto>SÃO FELIPE ESTADO DA BAHIA. VIA INTERNET SOU O UNICO DA MINHA CIDADE, ACREDITE</texto>
-		<usuario>felipe</usuario>
+		<texto>SOU Usuario2 ESTADO DA BAHIA. VIA INTERNET SOU O UNICO DA MINHA CIDADE, ACREDITE</texto>
+		<usuario>Usuario2</usuario>
 		<referenciaTreinamento>3</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>5</numero>
 		<texto>Mais uma vez agradecemos a sua presença. Pedimos que divulgue este canal de comunicação com a CTASP, aos conhecidos, concidadãos e amigos em geral</texto>
-		<usuario>equipe e-democracia</usuario>
+		<usuario>Usuario1</usuario>
+	</mensagem>
+			<mensagem>
+		<numero>6</numero>
+		<texto>PODE DEIXAR, VOU TENTAR</texto>
+		<usuario>Usuario2</usuario>
+		<referenciaTreinamento>5</referenciaTreinamento>
+	</mensagem>
+		<mensagem>
+		<numero>7</numero>
+		<texto>O que acha da lei organica?</texto>
+		<usuario>Usuario3</usuario>
 	</mensagem>
 	<mensagem>
-		<numero>6</numero>
+		<numero>8</numero>
 		<texto>ESTA MUDANÇA SERA FAVORAVEL</texto>
-		<usuario>felipe</usuario>
+		<usuario>Usuario2</usuario>
+		<referenciaTreinamento>7</referenciaTreinamento>
 	</mensagem>
 </discussao>

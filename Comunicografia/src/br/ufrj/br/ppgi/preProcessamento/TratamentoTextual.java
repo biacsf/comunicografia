@@ -103,6 +103,78 @@ public class TratamentoTextual {
 	
 
 	}
+	private static String removeStopWordsSimilaridade(String mensagem) throws IOException
+	{
+		Analyzer analyzer = new BrazilianAnalyzer(Version.LUCENE_42);
+		TokenStream tokenStream = new StandardTokenizer(Version.LUCENE_42, new StringReader(mensagem));
+		CharArraySet stopSet = BrazilianAnalyzer.getDefaultStopSet();
+		stopSet.add("é");
+		stopSet.add("além");
+		stopSet.add("além");
+		stopSet.add("desse");
+		stopSet.add("nesse");
+		stopSet.add("ai");
+		stopSet.add("vc");
+		stopSet.add("voce");
+		stopSet.add("você");
+		stopSet.add("nisso");
+		stopSet.add("onde");
+		stopSet.add("no");
+		stopSet.add("muito");
+		stopSet.add("das");
+		stopSet.add("que");
+		stopSet.add(".");
+		stopSet.add(",");
+		stopSet.add("?");
+		stopSet.add("!");
+		stopSet.add(";");
+		stopSet.add(":");
+		stopSet.add("maior");
+		stopSet.add("menor");
+		stopSet.add("mega");
+		stopSet.add("metros");
+		stopSet.add("atinge");
+		stopSet.add("atingir");
+		stopSet.add("ah");
+		stopSet.add("eh");
+		stopSet.add("tem");
+		stopSet.add("ter");
+		stopSet.add("pra");
+		stopSet.add("outra");
+		stopSet.add("coisa");
+		stopSet.add("para");
+		stopSet.add("esta");
+		stopSet.add("hoje");
+		stopSet.add("amanha");
+		stopSet.add("amanhã");
+		stopSet.add("ontem");
+		stopSet.add("houve");
+		stopSet.add("puro");
+		stopSet.add("sabe");
+		stopSet.add("saber");
+		stopSet.add("acho");
+		stopSet.add("usam");
+		stopSet.add("usando");	
+		stopSet.add("tendo");		
+		stopSet.add("está");
+
+		
+		tokenStream = new StopFilter(Version.LUCENE_42, tokenStream, stopSet);
+		//CharTermAttribute cattr = tokenStream.getAttribute(CharTermAttribute.class);
+		CharTermAttribute termAttr = tokenStream.getAttribute(CharTermAttribute.class);
+		
+		tokenStream.reset();
+		StringBuilder sb = new StringBuilder();
+		  while (tokenStream.incrementToken()) {
+		        if (sb.length() > 0) {
+		            sb.append(" ");
+		        }
+		        sb.append(termAttr.toString());
+		    }
+		    return sb.toString();
+	
+
+	}
 	public static List<Mensagem> executaTratamentosDiscussao(List<Mensagem> mensagens) throws FileNotFoundException, IOException
 	{
 		for(Mensagem mensagem:(List<Mensagem>) mensagens)
@@ -178,6 +250,30 @@ public class TratamentoTextual {
 						
 		
 		return texto;
+	}
+	
+	public static String executaTratamentosTextoParaSimilaridade(String mensagem) throws FileNotFoundException, IOException
+	{
+		
+			String texto;
+			String novoTexto="";
+			
+			texto = TratamentoTextual.converteParaMinuscula(mensagem);
+			texto = TratamentoTextual.removeStopWordsSimilaridade(mensagem);
+			
+			for(String palavra:texto.split(" "))
+			{
+				if(palavra.length() > 3)
+				{
+					novoTexto+=palavra+" ";
+				}
+			}
+			if(novoTexto.length() > 120)
+			{
+				novoTexto.substring(novoTexto.length()-121);
+			}
+		
+		return novoTexto;
 	}
 	
 	public static String executaTratamentosTextoParaFrequencias(String mensagem) throws FileNotFoundException, IOException

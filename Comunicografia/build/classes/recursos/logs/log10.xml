@@ -17,7 +17,7 @@
 	<mensagem>
 		<numero>3</numero>
 		<texto>oiiii</texto>
-		<usuario>Usuario2</usuario>
+		<usuario>Usuario3</usuario>
 		<tipo>cumprimento</tipo>
 		<referenciaTreinamento>1</referenciaTreinamento>
 	</mensagem>
@@ -51,20 +51,20 @@
 	<mensagem>
 		<numero>8</numero>
 		<texto>fazedo o q ai?</texto>
-		<usuario>Usuario2</usuario>
+		<usuario>Usuario3</usuario>
 		<tipo>pergunta</tipo>
 	</mensagem>
 	<mensagem>
 		<numero>9</numero>
 		<texto>to no estagio</texto>
-		<usuario>Usuario1</usuario>
+		<usuario>Usuario2</usuario>
 		<tipo>resposta</tipo>
 		<referenciaTreinamento>8</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>10</numero>
 		<texto>eu sei, rs</texto>
-		<usuario>Usuario2</usuario>
+		<usuario>Usuario3</usuario>
 		<tipo>backchannel</tipo>
 		<referenciaTreinamento>9</referenciaTreinamento>
 	</mensagem>

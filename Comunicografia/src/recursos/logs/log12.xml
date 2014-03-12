@@ -17,7 +17,7 @@
 	<mensagem>
 		<numero>3</numero>
 		<texto>oie</texto>
-		<usuario>Usuario2</usuario>
+		<usuario>Usuario3</usuario>
 		<tipo>cumprimento</tipo>
 		<referenciaTreinamento>1</referenciaTreinamento>
 	</mensagem>
@@ -37,8 +37,8 @@
 	</mensagem>
 	<mensagem>
 		<numero>6</numero>
-		<texto>tah na dabm?</texto>
-		<usuario>Usuario2</usuario>
+		<texto>estao na dabm?</texto>
+		<usuario>Usuario3</usuario>
 		<tipo>pergunta</tipo>
 	</mensagem>
 	<mensagem>
@@ -51,7 +51,7 @@
 	<mensagem>
 		<numero>8</numero>
 		<texto>:(</texto>
-		<usuario>Usuario2</usuario>
+		<usuario>Usuario3</usuario>
 	</mensagem>
 	<mensagem>
 		<numero>9</numero>
@@ -62,25 +62,25 @@
 	<mensagem>
 		<numero>10</numero>
 		<texto>comer</texto>
-		<usuario>Usuario2</usuario>
+		<usuario>Usuario3</usuario>
 		<tipo>resposta</tipo>
 		<referenciaTreinamento>9</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>11</numero>
 		<texto>poxa, acho q vou la fora</texto>
-		<usuario>Usuario1</usuario>
+		<usuario>Usuario2</usuario>
 		<referenciaTreinamento>10</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
 		<numero>12</numero>
 		<texto>faz tempo que nao comemos juntas...</texto>
-		<usuario>Usuario2</usuario>
+		<usuario>Usuario1</usuario>
 	</mensagem>
 	<mensagem>
 		<numero>13</numero>
 		<texto>é verdade. Aqui hoje também é ruim, feijoada</texto>
-		<usuario>Usuario1</usuario>
+		<usuario>Usuario3</usuario>
 		<referenciaTreinamento>12</referenciaTreinamento>
 	</mensagem>
 	<mensagem>
